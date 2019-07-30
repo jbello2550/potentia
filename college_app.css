@@ -1,0 +1,8 @@
+h1 {
+  text-align: center;
+}
+/*purpose of box1 unclear --> bad id*/
+#box1 {
+  width:150px;
+  height:100px;
+}
