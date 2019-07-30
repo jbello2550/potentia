@@ -1,0 +1,60 @@
+/*bosy look*/
+body{
+  background-color:white;
+}
+
+/*div style*/
+div{
+  margin: 0%;
+}
+
+/*login info*/
+h1{
+  text-align: center;
+  color: black;
+}
+
+/*form look*/
+form {
+  border: 3px solid;
+  margin: 10%;
+  margin-top:0px;
+  padding: 20px;
+} 
+
+/*input box css*/
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid;
+  box-sizing: border-box;
+}
+
+/* style buttons */
+button {
+  background-color: linen;
+  color: darkred;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+/*style for  cancel button*/
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: darkred;
+  color: linen;
+}
+
+/* "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+

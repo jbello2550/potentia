@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title> Potentia </title>
+
+    	 <link href="styles.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+          
+          <div>
+          <h1> LOGIN </h1> 
+          </div>
+		<form>
+        	<div class="login">
+        	<label for="uname"><b>Username</b></label>
+        	<input type="text" placeholder="Enter Username" name="uname" required>
+
+        	<label for="psw"><b>Password</b></label>
+        	<input type="password" placeholder="Enter Password" name="psw" required>
+
+        	<button type="submit">Login</button>
+        	</div>
+
+        	<div class="login">
+        	<button type="button" class="cancelbtn">Cancel</button>
+        	<span class="psw">Forgot <a href="#">password?</a></span>
+        	</div>
+		</form>
+
+		<!--connects to the javascript file -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-storage.js"></script>
+		<script src='login.js'></script>
+    </body>
+</html>
