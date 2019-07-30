@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-    	<title> Potentia </title>
+    	<title> Potentia Login</title>
 
     	 <link href="styles.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
           
-          <div>
-          <h1> LOGIN </h1> 
-          </div>
-		<form>
+           
+		<form id='login'>
         	<div class="login">
+            <h1> LOGIN </h1>
         	<label for="uname"><b>Username</b></label>
         	<input type="text" placeholder="Enter Username" name="uname" required>
 
@@ -27,6 +26,32 @@
         	<span class="psw">Forgot <a href="#">password?</a></span>
         	</div>
 		</form>
+
+        <h1> or </h1>
+         
+        <form id='signup'>
+            <div class="container">
+            <h1>SIGN UP</h1>
+            <p>Please fill in this form to create an account.</p>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Re-enter Password" name="psw_repeat" required>
+
+            <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            <div>
+            <button type="submit" class="signupbtn">Sign Up</button>
+            <button type="button" class="cancelbtn">Cancel</button>
+            </div>
+  </div>
+        </form>
 
 		<!--connects to the javascript file -->
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
