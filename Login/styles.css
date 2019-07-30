@@ -1,11 +1,6 @@
-/*bosy look*/
+/*body look*/
 body{
-  background-color:white;
-}
-
-/*div style*/
-div{
-  margin: 0%;
+  background-color:linen;
 }
 
 /*login info*/
@@ -17,10 +12,21 @@ h1{
 /*form look*/
 form {
   border: 3px solid;
-  margin: 10%;
-  margin-top:0px;
   padding: 20px;
+  background-color:white;
 } 
+
+/*login style*/
+#login{
+  margin: 10%;
+  margin-bottom:5px;
+}
+
+/*sign-up style*/
+#signup{
+   margin: 10%;
+   margin-top:5px;
+}
 
 /*input box css*/
 input[type=text], input[type=password] {
