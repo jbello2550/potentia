@@ -1,0 +1,10 @@
+﻿/*Forum CSS Page*/
+.Login {
+    position: absolute;
+    right: 7.5px;
+    top: 7.5px;
+    margin: 0px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
