@@ -14,10 +14,6 @@
 .Logo {
     width: 300px;
 }
-/*Centers the logo on the Homepage*/
-.main_body_homepage_container h2 {
-    font-family: 'Open Sans Condensed', sans-serif;
-}
 /*Affects the individual div for About Us and Contact*/
 .Information {
     border: 1px solid white;
@@ -25,6 +21,12 @@
     background-color: white;
     margin-bottom: 50px;
 }
-.Information h2{
-    margin-left: 10px;
+/*Affects the titel for About Us and Contact*/
+.Information_title{
+    margin: 10px 0px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 30px;
+    color: darkred;
+    padding-top: 10px;
+    padding: 10px
 }
