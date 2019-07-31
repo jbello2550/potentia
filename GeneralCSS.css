@@ -68,6 +68,35 @@ body {
 .main_body {
     height: 100vh;
     margin-top: 50px;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 7.55%;
+    margin-left: 7.5%;
+}
+/*affects all the text tags within main_body*/
+.main_body p{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
+/*Affects the topic header*/
+.main_body h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: darkred;
+    font-weight: bold;
+}
+/*Affects the sub topics*/
+.main_body h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+    color: darkred;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+/*Affects all list elemnts wihtin the body of the Finance webpage*/
+.main_body ul {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0px;
 }

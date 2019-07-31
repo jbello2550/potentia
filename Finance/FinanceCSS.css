@@ -1,0 +1,15 @@
+﻿/*Finance CSS page*/
+
+/*Includes padding and margins in the width and height*/
+* {
+    box-sizing: border-box
+}
+/*Affects each container for the sub topics*/
+.container {
+    margin-bottom: 30px;
+}
+/*Affects a link tags that are wwithin a container*/
+.container a{
+    color: blue;
+}
+
