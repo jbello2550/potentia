@@ -20,7 +20,7 @@
     width:155px;
     height:120px;
     display: inline-block;
-    background-color: white;
+    background-color: grey;
     margin: 0px 20px 20px 0px;
 }
 
@@ -34,7 +34,7 @@
 #genBod {
     height: 90px;
     width: 60%;
-    background-color: white;
+    background-color: grey;
     position: relative;
     left: 180px;
     bottom: 116px;
@@ -48,7 +48,7 @@
 
 .rightAd {
     display: inline-block;
-    background-color: white;
+    background-color: grey;
     height: 1000px;
     width: 100px;
     position: relative;
