@@ -1,0 +1,66 @@
+body {
+       background-color: pink;
+    /* ^Above Will Change^ */
+    color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* positioning work*/
+#cAppPage {
+    position: relative;
+    bottom: 525px;
+}
+
+#cAppContent {
+    width: 80%;
+    margin: 0px 0px 0px 2%;
+    display: inline-block;
+}
+
+/* font size relative to window size */
+.subtit {
+    font-size: 2vw;
+}
+
+/*purpose of box1 unclear to me, hence its terrible id*/
+#box1 {
+    width:155px;
+    height:120px;
+    display: inline-block;
+    background-color: white;
+    margin: 0px 20px 20px 0px;
+}
+
+#genTit {
+    display: inline-block;
+    position: relative;
+    bottom: 125px;
+    margin: 0px;
+}
+
+#genBod {
+    height: 90px;
+    width: 60%;
+    background-color: white;
+    position: relative;
+    left: 180px;
+    bottom: 116px;
+    display: inline-block;
+}
+
+#whatTit {
+    position: relative;
+    bottom: 115px;
+}
+
+.rightAd {
+    display: inline-block;
+    background-color: white;
+    height: 1000px;
+    width: 100px;
+    position: relative;
+    top: 465px;
+}
