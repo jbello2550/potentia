@@ -12,13 +12,45 @@
 .container a{
     color: blue;
 }
-/*Affects the dic container for the youtube video*/
+/*Container for Images*/
+.Image_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/*Image inside What is Financial Aid?*/
+.FASFA_Img_container, .FASFA_Img_container img {
+    width: 100%;
+}
+/*Image inside What is Needed?*/
+.what_You_Need_Img_Container, .what_You_Need_Img_Container img {
+    width: 100%;
+}
+@media (min-width: 1200px) {
+    /*Allows resizes images so they are only 75% of the page*/
+    /*Image inside What is Financial Aid*/
+    .FASFA_Img_container{
+        width: 75%;
+    }
+    .FASFA_Img_container img {
+        width: 100%;
+    }
+    /*Image inside What is Needed*/
+    .what_You_Need_Img_Container {
+        width: 75%;
+    }
+    .what_You_Need_Img_Container img{
+        width: 100%;
+    }
+}
+/************************************************************************************************************************************************************/
+/*Affects the div container for the youtube video*/
 .youtube-responsive-container {
-    position:relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
 }
 /*Affects the iframe that contains the youtube video*/
 .youtube-responsive-container iframe, .youtube-responsive-container object, .youtube-responsive-container embed {
