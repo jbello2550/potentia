@@ -7,7 +7,7 @@
 /*Affects the body of the webpage*/
 body {
     margin: 0px;
-    background-color: #fff2e6;
+    background-color: white;
 }
 /*Affects the title*/
 .title {
@@ -19,14 +19,28 @@ body {
 }
 .title a {
     text-decoration: none;
-        color: darkred;
+    color: darkred;
 }
-/*Affects the div container  that has the top and bottom menu_containers*/
-.menu_container_overall {
-    background-color: white;
-    justify-content: center;
+/*Affects the div container that has each menu-item*/
+.menu_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #fff2e6;
 }
-/*Affects the link back to hte homepage*/
+/*Affects all h1 tangs within the menu_container*/
+.menu_container h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Alegreya SC', serif;
+    font-size: 23px;
+}
+/*Affects all link tangs within the menu_container*/
+.menu_container_overall a {
+    text-decoration: none;
+    color: black;
+}
+/*Affects the link back to the homepage*/
 .Home {
     position: absolute;
     left: 7.5px;
@@ -35,24 +49,6 @@ body {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
     font-weight: 700;
-}
-/*Affects all link tangs within the menu_container*/
-.menu_container_overall a {
-    text-decoration: none;
-    color: black;
-}
-/*Affects the div container for both top and bottomfor the menu-bar*/
-.menu_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-/*Affects all link tangs within the menu_container*/
-.menu_container h1 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: 'Alegreya SC', serif;
-    font-size: 25px;
 }
 /*Affects the div container for each h1 element for the menu_container*/
 .menu_item {

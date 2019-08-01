@@ -16,9 +16,6 @@
 }
 /*Affects the individual div for About Us and Contact*/
 .Information {
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: white;
     margin-bottom: 50px;
 }
 /*Affects the titel for About Us and Contact*/

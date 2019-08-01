@@ -8,7 +8,52 @@
 .container {
     margin-bottom: 30px;
 }
-/*Affects a link tags that are wwithin a container*/
+/*Affects a link tags that are within a container*/
 .container a{
     color: blue;
 }
+/******************************************************************************************************************************/
+/*Affects the list elements that are within Steps*/
+#Steps li {
+    list-style: none;
+}
+/*Affects the elements that define what each step is*/
+#Steps span {
+    font-weight: 600;
+}
+/******************************************************************************************************************************/
+/*Affects the overall div that has the images for the steps*/
+.How_To_Register {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/*Each indivual div for each image*/
+.Register_image {
+    text-align: center;
+}
+/*Affects the overall div that has the images for the steps*/
+.How_To_Register p {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2.5px;
+    margin-top: 15px;
+}
+/*Affects each img inside the How to Register*/
+.How_To_Register img {
+    width: 85%;
+    border: 3.5px solid darkred;
+    border-radius: 7.5px;
+}
+@media (min-width: 1500px){
+    /*Each indivual div for each image*/
+    .Register_image {
+        width: 50%;
+        padding: 0px 10px;         
+    }
+    /*Affects each img inside the How to Register*/
+    .How_To_Register img {
+        width: 100%;
+    }
+}
+/******************************************************************************************************************************/

@@ -12,4 +12,21 @@
 .container a{
     color: blue;
 }
-
+/*Affects the dic container for the youtube video*/
+.youtube-responsive-container {
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+}
+/*Affects the iframe that contains the youtube video*/
+.youtube-responsive-container iframe, .youtube-responsive-container object, .youtube-responsive-container embed {
+    position:absolute;
+    left: 0;
+    top: 0;
+    width:100%;
+    height:96%;
+    text-align: center;
+    margin-right: 10%;
+}

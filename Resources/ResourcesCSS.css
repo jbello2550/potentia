@@ -1,0 +1,19 @@
+﻿/*Resources CSS page*/
+
+/*Includes padding and margins in the width and height*/
+* {
+    box-sizing: border-box
+}
+h3{
+    text-align: center;
+}
+/*Affects the div that has all the contact info*/
+.Contact_Info{
+    display: flex;
+    justify-content: center;
+    text-align: center
+}
+/*Affects each persons div with their contact information */
+.container{
+    margin: 0px 20px;
+}

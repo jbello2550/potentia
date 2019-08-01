@@ -1,6 +1,6 @@
 /*body look*/
 body{
-  background-color:linen;
+  background-color: white;
 }
 
 /*login info*/
@@ -16,7 +16,7 @@ h1 {
 form {
   border: 3px solid;
   padding: 20px;
-  background-color:white;
+  background-color: white;
 } 
 
 /*login style*/
