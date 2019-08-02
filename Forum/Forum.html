@@ -1,86 +1,94 @@
+<!--Forum html-->
+
 <!DOCTYPE html>
-    <html>
-        <head>
-            <title>Projects-Forum</title>
-            <link href="forum.css" rel="stylesheet" type="text/css">
-            <link href="https://fonts.googleapis.com/css?family=Alegreya+SC&display=swap" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|PT+Sans&display=swap" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
-        </head>
-        <body>
-        <div style="background-color: white; width: 100%;">
-            <div class="title"><a href="index.html">POTENTIA</a></div>
-            <div class="menu_container" id="menu_container_top">
-                <div class="menu_item">
-                    <h1><a href="Finance/Finance.html" style="text-decoration: none; color: black;">finance</a></h1>
-                </div>
-                <div class="menu_item">
-                    <h1><a href="Standardized_Testing/Standardized_Testing.html" style="text-decoration: none; color: black;">standardized testing</a></h1>
-                </div>
-                <div class="menu_item">
-                    <h1><a href="Collegeboard/Collegeboard.html" style="text-decoration: none; color: black;">collegeboard</a></h1>
-                </div>
-                <div class="menu_item">
-                    <h1><a href="College_Applications/College_Applications.html" style="text-decoration: none; color: black;">college applications</a></h1>
-                </div>
-                <div class="menu_item">
-                    <h1><a href="Forum/Forum.html" style="text-decoration: none; color: black;">forum</a></h1>
-                </div>
-                <div class="menu_item">
-                    <h1><a href="Resources/Resources.html" style="text-decoration: none; color: black;">resources</a></h1>
-                </div>
-                <div class="menu_item">
-                    <h1><a href="#" style="text-decoration: none; color: black;">translate</a></h1>
-                </div>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Forum</title>
+    <!--Links the General CSS to the Homepage-->
+    <link href="../GeneralCSS.css" rel="stylesheet" type="text/css" />
+    <!--Links the specific home page css to the homepagek-->
+    <link href="forum.css" rel="stylesheet" type="text/css" />
+    <!--Adds a font family-->
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Creates a header with all the different menu-topics-->
+    <div class="title"><a href="../index.html">POTENTIA</a></div>
+    <div class="menu_container_overall">
+        <div class="menu_container" id="menu_container_top">
+            <div class="menu_item">
+                <h1><a href="../Finance/Finance.html">finance</a></h1>
             </div>
-            <!--Link on the side that leads back home-->
-            <h3 class="Home"><a href="index.html" style="text-decoration: none; color: black;">Home</a></h3>
-            <div class="line"></div>
+            <div class="menu_item">
+                <h1><a href="../Standardized_Testing/Standardized_Testing.html">standardized testing</a></h1>
+            </div>
+            <div class="menu_item">
+                <h1><a href="../Collegeboard/Collegeboard.html">collegeboard</a></h1>
+            </div>
+            <div class="menu_item">
+                <h1><a href="../College_Applications/College_Applications.html">college applications</a></h1>
+            </div>
+            <div class="menu_item">
+                <h1><a href="Forum.html">forum</a></h1>
+            </div>
+            <div class="menu_item">
+                <h1><a href="../Resources/Resources.html">resources</a></h1>
+            </div>
+            <div class="menu_item">
+                <h1><a href="#">translate</a></h1>
+            </div>
         </div>
+        <!--Link on the side that leads back home-->
+        <h3 class="Home"><a href="../index.html">Home</a></h3>
+        <h3 class="Login_button"><a href="Login/login.html">Login</a></h3>
+    </div>
+    <!--Line at the top of the page-->
+    <div class="line"></div>
 
-            <div id="title_forum" style="text-align: center; margin-bottom: -85px; font-family:Open Sans Condensed', sans-serif;" onclick="options()">
-                <h1 style="margin-bottom: -10px;"> General Forum </h1><br>
-                <span style="font-family: 'Open Sans Condensed', sans-serif;"> click to see more topics </span>
-                <img src="https://www.stickpng.com/assets/images/58f8bcf70ed2bdaf7c128307.png" style="height: 20px; margin-bottom: -5px;"><br>
-                <div id="forum_options" style="margin-top: 25px; display: none; color: #5E5E5E;">
-                    <span class="SAT" style="padding-right: 30px; padding-left: 30px; font-family: 'Open Sans Condensed', sans-serif;"> SAT </span>
-                    <span class="ACT" style="padding-right: 30px; font-family: 'Open Sans Condensed', sans-serif;"> ACT </span>
-                    <span class="Finances" style="padding-right: 30px; font-family: 'Open Sans Condensed', sans-serif;"> Finances </span>
-                    <span class="App" style="padding-right: 30px; font-family: 'Open Sans Condensed', sans-serif;"> Common App </span>
-                    <span class="General" style="padding-right: 30px; font-family: 'Open Sans Condensed', sans-serif; color: black;"> General </span>
+    <div id="title_forum" style="text-align: center; margin-bottom: -85px; font-family: Verdana, Geneva, sans-serif; font-size: 14px " onclick="options()">
+        <h1 style="margin-bottom: -10px; font-family:'Open Sans Condensed', sans-serif"> General Forum </h1><br>
+        <span style="font-family: Verdana, Geneva, sans-serif; font-size: 14px;"> click to see more topics </span>
+        <img src="https://www.stickpng.com/assets/images/58f8bcf70ed2bdaf7c128307.png" style="height: 20px; margin-bottom: -5px;"><br>
+        <div id="forum_options" style="margin-top: 25px; display: none; color: #5E5E5E;">
+            <span class="SAT" style="padding-right: 30px; padding-left: 30px; font-family: Verdana, Geneva, sans-serif;"> SAT </span>
+            <span class="ACT" style="padding-right: 30px; font-family: Verdana, Geneva, sans-serif; font-size: 14px "> ACT </span>
+            <span class="Finances" style="padding-right: 30px; font-family: Verdana, Geneva, sans-serif; font-size: 14px "> Finances </span>
+            <span class="App" style="padding-right: 30px; font-family: Verdana, Geneva, sans-serif;  font-size: 14px"> Common App </span>
+            <span class="General" style="padding-right: 30px; font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: black;"> General </span>
+        </div>
+    </div>
+
+    <div id="container" style="margin-top: 50px; border-radius: 10px; padding-top: 100px; padding-bottom: 100px;">
+        <div id="user_profile" style="margin-left: -130px; margin-top: -34px; text-align: center; margin-bottom: 70px;">
+            <form id="post">
+                <input type="text" style="border-top-right-radius: 5px; width: 450px; height: 120px; border: 1px solid #E4E3E2; border-bottom-right-radius: 5px; margin-left: 277.5px; text-indent: 10px; background-color: #F0F0F0; font-family: Verdana, Geneva, sans-serif; font-size: 14px;" id="post_here" placeholder="Caption" >
+                <div style="margin-top: -170px; margin-left: -324px;">
+                    <input type="text" style="width: 150px; height: 120px; border: 1px solid #E4E3E2; text-indent: 10px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; margin-top: 50px; background-color: #F0F0F0; font-family: Verdana, Geneva, sans-serif; font-size: 14px;" id="topic_text" placeholder="Main Topic">
+                    <div>
+                        <input type="submit" style="margin-top: 10px; margin-left: 990px; border: 0px; color: #F0F0F0; background-color: darkred; padding: 6px; border-radius: 3px; position: absolute; margin-top: -32px; margin-left: 483px; font-family: Verdana, Geneva, sans-serif;" value="Post">
+                    </div>
                 </div>
-
-            </div>
-
-
-                    <div id="container" style="margin-top: 50px; border-radius: 10px; padding-top: 100px; padding-bottom: 100px;">
-
-                        <div id="user_profile" style="margin-left: -130px; margin-top: -34px; text-align: center; margin-bottom: 70px;">
-                            <form id="post">
-                                <input type="text" style="border-top-right-radius: 5px; width: 450px; height: 120px; border: 1px solid #E4E3E2; border-bottom-right-radius: 5px; margin-left: 277.5px; text-indent: 10px; background-color: #F0F0F0;" id="post_here" placeholder="Caption">
-                                <div style="margin-top: -170px; margin-left: -324px;">
-                                    <input type="text" style="width: 150px; height: 120px; border: 1px solid #E4E3E2; text-indent: 10px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; margin-top: 50px; background-color: #F0F0F0" id="topic_text" placeholder="Main Topic">
-                                    <div>
-                                        <input type="submit" style="margin-top: 10px; margin-left: 990px; border: 0px; color: #F0F0F0; background-color: darkred; padding: 6px; border-radius: 3px; position: absolute; margin-top: -32px; margin-left: 483px; font-family: 'Open Sans Condensed', sans-serif;" value="Post"> 
-                                    </div>
-                                </div>                       
-                            </form>
-                        </div>
-                        <div id="wrapper" style="text-align: center; padding-top: 30px; margin-left: 45px; margin-top: -80px; margin-bottom: 30px;">
-                            <form id="search" style="display: inline-block;">
-                                <input type="text" style="border-radius: 25px; width: 450px; border-style: solid; border-color: #F0F0F0; height: 21px;" id="search_bar">
-                                <input type="submit" style="border: 0px; color: #F0F0F0; background-color: darkred; padding: 6px; border-radius: 3px; font-family: 'Open Sans Condensed', sans-serif;" value="Search">
-                                <img src="https://icon-library.net/images/white-search-icon-transparent-background/white-search-icon-transparent-background-13.jpg" style="height: 15px; position: absolute; margin-top: -21px; margin-left: 180px;">
-                            </form>
-                        </div>
-                    </div> 
-
-            <script src="https://www.w3schools.com/lib/w3.js"></script>
-    		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
-            <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"></script>
-            <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
-            <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-storage.js"></script>
-            <script src="forum.js"></script>
-        </body>
-    </html>
+            </form>
+        </div>
+        <div id="wrapper" style="text-align: center; padding-top: 30px; margin-left: 45px; margin-top: -80px; margin-bottom: 30px;">
+            <form id="search" style="display: inline-block;">
+                <input type="text" style="border-radius: 25px; width: 450px; border-style: solid; border-color: #F0F0F0; height: 21px;" id="search_bar">
+                <input type="submit" style="border: 0px; color: #F0F0F0; background-color: darkred; padding: 6px; border-radius: 3px; font-family: Verdana, Geneva, sans-serif;" value="Search">
+                <img src="https://icon-library.net/images/white-search-icon-transparent-background/white-search-icon-transparent-background-13.jpg" style="height: 15px; position: absolute; margin-top: -21px; margin-left: 180px;">
+            </form>
+        </div>
+    </div>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-storage.js"></script>
+    <script src="forum.js"></script>
+</body>
+</html>
