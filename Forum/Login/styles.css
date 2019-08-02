@@ -1,31 +1,40 @@
 /*body look*/
 body{
-  background-color:linen;
+  background-color: white;
 }
 
 /*login info*/
-h1{
-  text-align: center;
-  color: black;
+h1 {
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+    color: darkred;
+    font-weight: bold;
 }
 
 /*form look*/
 form {
   border: 2.5px solid;
   padding: 20px;
-  background-color:white;
+  background-color: white;
 } 
 
 /*login style*/
-#login{
-  margin: 10%;
-  margin-bottom:5px;
+#login {
+    margin: 10%;
+    margin-bottom: 5px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
 }
 
 /*sign-up style*/
-#signup{
-   margin: 10%;
-   margin-top:5px;
+#signup {
+    margin: 10%;
+    margin-top: 5px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
 }
 
 /*input box css*/
@@ -39,15 +48,18 @@ input[type=text], input[type=password] {
 }
 
 /* style buttons */
-input[type=submit]{
-  background-color: linen;
-  color: darkred;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  font-weight: bold;
+button, .Login_button {
+    background-color: linen;
+    color: darkred;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 500;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
 }
 
 /*style for  cancel button*/
@@ -56,11 +68,16 @@ input[type=submit]{
   padding: 10px 18px;
   background-color: darkred;
   color: linen;
+
 }
 
 /* "Forgot password" text */
 span.psw {
-  float: right;
-  padding-top: 16px;
+    float: right;
+    padding-top: 16px;
+    font-size: 15px;
 }
-
+/*Affects the link for Forgot Password*/
+.psw a {
+    color: blue;
+}
