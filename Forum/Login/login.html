@@ -1,101 +1,82 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title> Potentia Login</title>
-    <!--Links the General CSS to the Homepage-->
-    <link href="../../GeneralCSS.css" rel="stylesheet" type="text/css" />
-    <!--Link to the specific CSS page-->
-    <link href="styles.css" rel="stylesheet" type="text/css">
-    <!--Adds a font family-->
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|PT+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
-</head>
+    <head>
+    	<title> Potentia Login</title>
 
-<body>
-    <!--Creates a header with all the different menu-topics-->
-    <div class="title"><a href="../../index.html">POTENTIA</a></div>
-    <div class="menu_container_overall">
-        <div class="menu_container" id="menu_container_top">
-            <div class="menu_item">
-                <h1><a href="../../Finance/Finance.html">finance</a></h1>
-            </div>
-            <div class="menu_item">
-                <h1><a href="../../Standardized_Testing/Standardized_Testing.html">standardized testing</a></h1>
-            </div>
-            <div class="menu_item">
-                <h1><a href="../../Collegeboard/Collegeboard.html">collegeboard</a></h1>
-            </div>
-            <div class="menu_item">
-                <h1><a href="../../College_Applications/College_Applications.html">college applications</a></h1>
-            </div>
-            <div class="menu_item">
-                <h1><a href="../Forum.html">forum</a></h1>
-            </div>
-            <div class="menu_item">
-                <h1><a href="../../Resources/Resources.html">resources</a></h1>
-            </div>
-            <div class="menu_item">
-                <h1><a href="#">translate</a></h1>
-            </div>
-        </div>
-        <!--Link on the side that leads back home-->
-        <h3 class="Home"><a href="../../index.html">Home</a></h3>
-    </div>
-    <!--Line at the top of the page-->
-    <div class="line"></div>
-    <!------------------------------------------------------------------------------------------------------------------------------->
+    	 <link href="styles.css" rel="stylesheet" type="text/css">
+    </head>
 
-    <form id='login'>
-        <div class="login">
+    <body>
+          
+           
+		<form id='login'>
+        	<div class="login-contain">
             <h1> LOGIN </h1>
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
+        	<label for="uname"><b>Email</b></label>
+        	<input type="text" placeholder="Enter Email" name="uname" id='eusername'>
 
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+        	<label for="psw"><b>Password</b></label>
+        	<input type="password" placeholder="Enter Password" name="psw" id='password' >
 
-            <button type="submit">Login</button>
-        </div>
+        	<input type="submit" value='Login'></input>
+        	</div>
 
-        <div class="login">
-            <button type="button" class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
-    </form>
+        	<div class="login">
+        	<button type="button" class="cancelbtn">Cancel</button>
+        	<span class="psw">Forgot <a href="#">password?</a></span>
+        	</div>
+		</form>
 
-    <h1 style="color:black;"> OR </h1>
-
-    <form id='signup'>
-        <div class="container">
+        <h1> or </h1>
+         
+        <form id='signup'>
+            <div class="container">
             <h1>SIGN UP</h1>
             <p>Please fill in this form to create an account.</p>
 
             <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" required>
+            <input type="text" placeholder="Enter Email" name="email" id='email'>
 
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-
-            <label for="psw-repeat"><b>Repeat Password</b></label>
-            <input type="password" placeholder="Re-enter Password" name="psw_repeat" required>
+            <input type="password" placeholder="Enter Password" name="psw" id='passwords'>
 
             <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
+            <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>
             <div>
-                <button type="submit" class="signupbtn">Sign Up</button>
-                <button type="button" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+            <button type="button" class="cancelbtn">Cancel</button>
             </div>
-        </div>
-    </form>
+  </div>
+        </form>
 
-    <!--connects to the javascript file -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-storage.js"></script>
-    <script src='login.js'></script>
-</body>
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-firestore.js"></script>
+    <script>
+    
+  var firebaseConfig = {
+    apiKey: "AIzaSyAH0-dtYwDZ1_XO8ZwAE7HEAfR2AO-_XY8",
+    authDomain: "potentia-85501.firebaseapp.com",
+    databaseURL: "https://potentia-85501.firebaseio.com",
+    projectId: "potentia-85501",
+    storageBucket: "",
+    messagingSenderId: "615187511736",
+    appId: "1:615187511736:web:3c21267a349c677d"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  </script>
+		<!--connects to the javascript file -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!--<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-storage.js"></script>-->
+		<script src='login.js'></script>
+    </body>
 </html>
