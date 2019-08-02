@@ -8,12 +8,14 @@ h3{
     text-align: center;
 }
 /*Affects the div that has all the contact info*/
-.Contact_Info{
+.Contact_Info {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     text-align: center
 }
 /*Affects each persons div with their contact information */
-.container{
+.Contact_Info_subcontainer {
     margin: 0px 20px;
+    display: inline-block;
 }
