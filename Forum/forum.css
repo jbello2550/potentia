@@ -1,0 +1,114 @@
+body {
+	background-color: white;
+}
+
+#container {
+	background-color: white;
+	width: 100%;
+	height: 100%;
+}
+    
+/*General CSS*/
+
+/*Includes padding and margins in the width and height*/
+* {
+    box-sizing: border-box
+}
+/*Affects the body of the webpage*/
+body {
+    margin: 0px;
+    background-color: white;
+}
+/*Affects the title*/
+.title {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: 'Grenze', serif;
+    font-weight: 500;
+}
+.title a {
+    text-decoration: none;
+    color: darkred;
+}
+/*Affects the div container that has each menu-item*/
+.menu_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #fff2e6;
+}
+/*Affects all h1 tangs within the menu_container*/
+.menu_container h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Alegreya SC', serif;
+    font-size: 23px;
+}
+/*Affects all link tangs within the menu_container*/
+.menu_container_overall a {
+    text-decoration: ;
+    color: black;
+}
+/*Affects the link back to the homepage*/
+.Home {
+    position: absolute;
+    left: 7.5px;
+    top: 7.5px;
+    margin: 0px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+/*Affects the div container for each h1 element for the menu_container*/
+.menu_item {
+    text-align: center;
+    margin: 0px 20px;
+}
+/*Red line at the top of the page*/
+.line {
+    background-color:darkred;
+    height: 30px;
+}
+/*Affects the margin of the webpage*/
+.main_body {
+    height: 100vh;
+    margin-top: 50px;
+    margin-right: 7.55%;
+    margin-left: 7.5%;
+}
+/*affects all the text tags within main_body*/
+.main_body p{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
+/*Affects the topic header*/
+.main_body h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: darkred;
+    font-weight: bold;
+}
+/*Affects the sub topics*/
+.main_body h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+    color: darkred;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+/*Affects all list elemnts wihtin the body of the Finance webpage*/
+.main_body ul {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0px;
+}
+
+input::placeholder {
+  font-size: 15px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
