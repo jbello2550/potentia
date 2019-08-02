@@ -61,8 +61,8 @@ function addNewItem(doc){
 	caption.innerHTML = doc.data().postText;
 	caption.style.marginLeft = "20%";
 	caption.style.marginTop = "-60px";
-    caption.style.fontSize = 14 + 'px';
-    caption.style.fontFamily = "Verdana, Geneva, sans-serif";
+        caption.style.fontSize = 14 + 'px';
+        caption.style.fontFamily = "Verdana, Geneva, sans-serif";
 
 	caption_box.appendChild(caption);
 
@@ -77,8 +77,8 @@ function addNewItem(doc){
 	main_caption.innerHTML = doc.data().mainTopic;
 	main_caption.style.paddingRight = "700px";
 	main_caption.style.paddingTop = "40px";
-    main_caption.style.fontFamily = "Verdana, Geneva, sans-serif";
-    main_caption.style.fontSize = 14 + 'px';
+        main_caption.style.fontFamily = "Verdana, Geneva, sans-serif";
+        main_caption.style.fontSize = 14 + 'px';
 
 	var reply = document.createElement("INPUT");
 	reply.setAttribute("type", "submit");
@@ -91,8 +91,8 @@ function addNewItem(doc){
 	reply.style.padding = "6px";
 	reply.style.borderRadius = "3px";
 	reply.style.marginTop = "-20px";
-    reply.style.fontFamily = "Verdana, Geneva, sans-serif";
-    reply.style.fontSize = 14 + 'px';
+        reply.style.fontFamily = "Verdana, Geneva, sans-serif";
+        reply.style.fontSize = 14 + 'px';
 
 	topic_box.appendChild(main_caption);
 
