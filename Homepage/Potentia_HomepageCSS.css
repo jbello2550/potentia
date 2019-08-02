@@ -4,6 +4,15 @@
 * {
     box-sizing: border-box
 }
+.Home_background_container {
+    height: 100vh;
+}
+.Home_background_img {
+    background-image: url('Homepage_background(1).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%
+}
 /*Centers the logo on the Homepage*/
 .main_body_homepage {
     text-align: center;
@@ -18,12 +27,29 @@
 .Information {
     margin-bottom: 50px;
 }
-/*Affects the titel for About Us and Contact*/
+/*Affects the title for About Us and Contact*/
 .Information_title{
     margin: 10px 0px;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 30px;
     color: darkred;
     padding-top: 10px;
-    padding: 10px
+    padding: 10px;
+    text-align: center;
+}
+/*Affects the p tags within teh div About Us*/
+.About_Us_content {
+    text-align: center;
+}
+/*Affects the div that has all the contact info*/
+.Contact_Info_content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center
+}
+/*Affects each persons div with their contact information */
+.container {
+    margin: 0px 20px;
+    display: inline-block;
 }
