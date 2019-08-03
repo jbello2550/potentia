@@ -19,3 +19,7 @@ h3{
     margin: 0px 20px;
     display: inline-block;
 }
+/*Makes all teh link tags for the sources blue*/
+.container a {
+    color: blue;
+}
