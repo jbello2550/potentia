@@ -28,6 +28,10 @@ body {
     justify-content: space-around;
     background-color: #fff2e6;
 }
+/*Affects the div container that has each menu-item*/
+.menu_container:hover .menu_container {
+    color: #fff0b3; 
+}
 /*Affects all h1 tangs within the menu_container*/
 .menu_container h1 {
     margin-top: 10px;
@@ -51,13 +55,39 @@ body {
     font-weight: 700;
 }
 /*Affects the div container for each h1 element for the menu_container*/
-.menu_item {
+.menu_item a, .translate_dropdown h1 {
     text-align: center;
-    margin: 0px 20px;
+    margin: 0px;
+    padding: 10px 20px;
+}
+/*Hides the content of the dropdown till you hover over it*/
+.translate_dropdown_content {
+    display: none;
+    overflow-y: scroll;
+    height: 130px;
+}
+/*Creates a dropdown whe you hover over the translate*/
+.translate_dropdown:hover .translate_dropdown_content {
+    display: inline-block;
+    position: absolute;
+    background-color: #fff2e6;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    width: 143.961px;
+}
+/*Changes the colors when you hover over an item*/
+.menu_item:hover a, .translate_dropdown:hover h1, .translate_dropdown_content p:hover {
+    background-color: darkred;
+}
+/*Affects the p container whihc are the options iwhtin the translate button*/
+.translate_dropdown_content p {
+    text-align: center;
+    padding: 15px 0px;
+    margin: 0px;
 }
 /*Red line at the top of the page*/
 .line {
-    background-color:darkred;
+    background-color: darkred;
     height: 30px;
 }
 /*Affects the margin of the webpage*/
