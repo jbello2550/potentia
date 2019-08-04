@@ -11,17 +11,21 @@
     background-image: url('Homepage_background(1).jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%
+    height: 100%;
 }
 /*Centers the logo on the Homepage*/
 .main_body_homepage {
     text-align: center;
-    vertical-align: middle;
-    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 100px;
 }
 /*Logo for the homepage*/
 .Logo {
     width: 300px;
+    position: absolute;
 }
 /*Affects the individual div for About Us and Contact*/
 .Information {
