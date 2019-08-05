@@ -25,61 +25,64 @@
 /*Affects the overall div that has the images for the steps*/
 .How_To_Register {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 1000px;
     position: relative;
-    margin: auto;
 }
 /*Each indivual div for each image*/
 .Register_image {
     text-align: center;
 }
 /*Affects the overall div that has the images for the steps*/
-.How_To_Register p {
-    text-align: center;
-    font-weight: bold;
+.Register_image p {
     margin-bottom: 2.5px;
     margin-top: 15px;
 }
 /*Affects each img inside the How to Register*/
-.How_To_Register img {
-    width: 85%;
+.Register_image img {
+    width: 100%;
     border: 3.5px solid darkred;
     border-radius: 7.5px;
 }
-@media (min-width: 1500px){
-    /*Each indivual div for each image*/
-    .Register_image {
-        width: 50%;
-        padding: 0px 10px;         
-    }
-    /*Affects each img inside the How to Register*/
-    .How_To_Register img {
-        width: 100%;
-    }
+/* Hide all images except the first */
+.Register_image:not(:first-child) {
+    display: none;
 }
+/* Affects the Next and Previous buttons */
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
-
+/*Position the prev button to the left */
+.prev {
+    left: 0;
+}
+/*Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
-
+/*Makes the buttons black when you hover*/
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+/*Affects each dot*/
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 10px 2px 0px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot:hover {
+    background-color: #717171;
+}
 /******************************************************************************************************************************/

@@ -7,10 +7,11 @@
     <meta charset="utf-8" />
     <!--Adds mobile responsiveness-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--title-->
     <title>Collegeboard</title>
     <!--Puts a icon on the side when you open a new tab-->
     <link rel="shortcut icon" type="image/png" href="../Favicon/Logo.png" />
+    <!--Links Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Links the General CSS to the Homepage-->
     <link href="../GeneralCSS.css" rel="stylesheet" type="text/css" />
     <!--Links the specific home page css to the homepagek-->
@@ -19,6 +20,7 @@
     <link href="https://fonts.googleapis.com/css?family=Alegreya+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <!--Creates a header with all the different menu-topics-->
@@ -54,7 +56,7 @@
             </div>
         </div>
         <!--Link on the side that leads back home-->
-        <h3 class="Home"><a href="../index.html">Home</a></h3>
+        <h3 class="Home"><a id="Home" href="index.html">Home</a></h3>
     </div>
     <!--Line at the top of the page-->
     <div class="line"></div>
@@ -70,17 +72,19 @@
                     CollegeBoard is a non-profit organization which helps connect students to college opportunities and success.
                     CollegeBoard directly helps students to prepare for the SAT and Advanced Placement Program. College Board
                     offers scholarship applications,research, college planning, as well as college and career search tools.
-                    College Board also administers standardized tests, such as the <b>SAT Suite of Assessments, PSAT 8/9, PSAT 10,
-                    PSAT/NMSQT, SAT, and SAT subject tests.</b> College Board offers students the opportunity to be entered in to Student
+                    College Board also administers standardized tests, such as the <b>
+                        SAT Suite of Assessments, PSAT 8/9, PSAT 10,
+                        PSAT/NMSQT, SAT, and SAT subject tests.
+                    </b> College Board offers students the opportunity to be entered in to Student
                     Search Services. Student Search Services gives students free information that regards college admissions,
                     financial aid, and scholarships.
                 </p>
                 <p>
-                    College Board gives students access to the Advanced Placement Program which enables high school students to take 
-                    college-level classes similar in difficulty to first-year college courses. College Board’s also provides a CSS 
-                    Profile. CSS Profile is an online application for financial aid outside of federal aid. The profile is used by 
-                    approximately 400 colleges, universities, professional schools, as well as scholarship programs. College Board 
-                    has many other helpful applications which help students to be successful, but these applications are only available 
+                    College Board gives students access to the Advanced Placement Program which enables high school students to take
+                    college-level classes similar in difficulty to first-year college courses. College Board’s also provides a CSS
+                    Profile. CSS Profile is an online application for financial aid outside of federal aid. The profile is used by
+                    approximately 400 colleges, universities, professional schools, as well as scholarship programs. College Board
+                    has many other helpful applications which help students to be successful, but these applications are only available
                     if you make an account.
                 </p>
             </div>
@@ -88,40 +92,54 @@
             <div class="container">
                 <h3>How to Register / Navigations</h3>
                 <div class="How_To_Register">
-                    <div class="Register_image">
+                    <div class="Register_image" id="im_1">
                         <p>Step 1</p>
                         <img src="How_To_Register/step1.png" />
                     </div>
-                    <div class="Register_image">
+                    <div class="Register_image" id="im_2">
                         <p>Step 2</p>
                         <img src="How_To_Register/step2.png" />
                     </div>
-                    <div class="Register_image">
+                    <div class="Register_image" id="im_3">
                         <p>Step 3</p>
                         <img src="How_To_Register/step3.png" />
                     </div>
-                    <div class="Register_image">
+                    <div class="Register_image" id="im_4">
                         <p>Step 4</p>
                         <img src="How_To_Register/step4.png" />
                     </div>
-                    <div class="Register_image">
+                    <div class="Register_image" id="im_5">
                         <p>Step 5</p>
                         <img src="How_To_Register/step5.png" />
                     </div>
-                    <div class="Register_image">
+                    <div class="Register_image" id="im_6">
                         <p>Step 6</p>
                         <img src="How_To_Register/step6.png" />
                     </div>
-                    <div class="Register_image">
+                    <div class="Register_image" id="im_7">
                         <p>Step 7</p>
                         <img src="How_To_Register/step7.png" />
                     </div>
-                    <div class="Register_image">
+                    <div class="Register_image" id="im_8">
                         <p>Step 8</p>
                         <img src="How_To_Register/step8.png" />
                     </div>
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!--The next and prev button-->
+                    <div class="prev" id="previous">&#10094;</div>
+                    <div class="next" id="next">&#10095;</div>
+                </div>
+                <!--Dots underneath the slideshow to show whihc image you are on-->
+                <div style="text-align:center">
+                    <!-- <span class="dot" onclick="currentSlide(1)"></span>
+                     <span class="dot" onclick="currentSlide(2)"></span>
+                     <span class="dot" onclick="currentSlide(3)"></span>
+                     <span class="dot" onclick="currentSlide(4)"></span>
+                     <span class="dot" onclick="currentSlide(5)"></span>
+                     <span class="dot" onclick="currentSlide(6)"></span>
+                     <span class="dot" onclick="currentSlide(7)"></span>
+                     <span class="dot" onclick="currentSlide(8)"></span>
+                        -->
                 </div>
             </div>
             <!--Steps-->
@@ -156,7 +174,13 @@
             </div>
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src='collegeboard.js'></script>
+    <!--Links the nessacry materials to connects the JavaScript for Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--Links jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Link the JavaScript file-->
+    <script src="CollegeboardJS.js"></script>
 </body>
 </html>
