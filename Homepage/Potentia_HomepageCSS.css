@@ -6,26 +6,27 @@
 }
 .Home_background_container {
     height: 100vh;
+    position: relative
 }
 .Home_background_img {
-    background-image: url('Homepage_background(1).jpg');
+    background-image: url('Homepage_background.jpg');    
     background-size: cover;
     background-repeat: no-repeat;
+    opacity: .85;
     height: 100%;
 }
 /*Centers the logo on the Homepage*/
-.main_body_homepage {
-    text-align: center;
-    position: relative;
+.Logo_container {
     display: flex;
     justify-content: center;
-    width: 100%;
-    top: 100px;
 }
 /*Logo for the homepage*/
 .Logo {
-    width: 300px;
+    width: 350px;
     position: absolute;
+    top: 125px;
+    border-radius: 50%;
+    opacity: 1;
 }
 /*Affects the individual div for About Us and Contact*/
 .Information {
