@@ -13,7 +13,6 @@ body {
 .title {
     font-size: 50px;
     text-align: center;
-    margin-bottom: 5px;
     font-family: 'Grenze', serif;
     font-weight: 500;
 }
@@ -46,17 +45,19 @@ body {
     color: darkred; 
 }
 /*Affects all h1 tangs within the menu_container*/
-.menu_container h1 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: 'Alegreya SC', serif;
-    font-size: 23px;
-    color: goldenrod;
-}
+    .menu_container h1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";        font-size: 1rem;
+        text-transform: capitalize;
+        font-weight: 400;
+        line-height: 1.5;
+        color: white;
+    }
 /*Affects all link tangs within the menu_container*/
 .menu_container_overall a {
     text-decoration: none;
-    color: goldenrod;
+    color: white;
 }
 
 /*Affects the div container for each h1 element for the menu_container*/
@@ -71,29 +72,29 @@ body {
     overflow-y: scroll;
     height: 130px;
 }
-/*Creates a dropdown whe you hover over the translate*/
+/*Creates a dropdown when you hover over the translate*/
 .translate_dropdown:hover .translate_dropdown_content {
     display: inline-block;
     position: absolute;
     background-color: darkred;
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 14px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
     width: 143.961px;
 }
 /*Changes the colors when you hover over an item*/
 .menu_item:hover a, .translate_dropdown:hover h1, .translate_dropdown_content p:hover {
-    background-color: darkred;
+    background-color: #999999;
 }
 /*Affects the p container whihc are the options iwhtin the translate button*/
 .translate_dropdown_content p {
     text-align: center;
     padding: 15px 0px;
     margin: 0px;
-    color: goldenrod;
+    color: white;
 }
 /*Red line at the top of the page*/
 .line {
-    background-color: steelblue;
+    background-color: #999999;
     height: 10px;
 }
 /*Affects the margin of the webpage*/
