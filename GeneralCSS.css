@@ -15,10 +15,18 @@ body {
     text-align: center;
     font-family: 'Grenze', serif;
     font-weight: 500;
+    position: relative;
 }
 .title a {
     text-decoration: none;
     color: darkred;
+}
+/*Affects the image next to the title*/ 
+.Top_Logo {
+    width: 45px;
+    border-radius: 50%;
+    position: relative;
+    top: 5px
 }
 /*Affects the link back to the homepage*/
 .Home {
