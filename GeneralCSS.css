@@ -26,7 +26,8 @@ body {
     width: 45px;
     border-radius: 50%;
     position: relative;
-    top: 5px
+    top: 5px;
+    margin-right: 5px;
 }
 /*Affects the link back to the homepage*/
 .Home {
