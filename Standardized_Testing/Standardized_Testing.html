@@ -14,7 +14,7 @@
     <!--Links the General CSS to the Homepage-->
     <link href="../GeneralCSS.css" rel="stylesheet" type="text/css" />
     <!--Links the specific home page css to the homepagek-->
-    <link href="Standarized_TestingCSS.css" rel="stylesheet" type="text/css" />
+    <link href="Standardized_TestingCSS.css" rel="stylesheet" type="text/css" />
     <!--Adds a font family-->
     <link href="https://fonts.googleapis.com/css?family=Alegreya+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|PT+Sans&display=swap" rel="stylesheet">
@@ -64,15 +64,22 @@
     <div class="line"></div>
     <!------------------------------------------------------------------------------------------------------------------------------->
     <div class="main_body">
-        <div class="main_body_StandardizedTesting">
-            <!--Title for the page-->
-            <ul class="slider_container">
-                <li class="slider_item" id="item1"><a href="SAT/SAT.html">SAT</a></li>
-                <li class="slider_item" id="item2"><a href="ACT/ACT.html">ACT</a></li>
-                <li class="slider_item" id="item3"><a href="Standardized_Testing.html">Standardized Testing</a></li>
-                <li class="slider_item" id="item4"><a href="AP_Exams/AP_Exams.html">AP Exams</a></li>
-                <li class="slider_item" id="item5"><a href="Subject_Test/Subject_Test.html">Subject Test</a></li>
-            </ul>
+        <div id="main_body_StandardizedTesting">
+            <!--the slides bar to switch between topics-->
+            <div class="slider_container">
+                <ul class="slider_content_container">
+                    <li class="slider_item" id="item1"><a href="SAT/SAT.html">SAT</a></li>
+                    <li class="slider_item" id="item2"><a href="ACT/ACT.html">ACT</a></li>
+                    <!--Title for the page-->
+                    <li class="slider_item" id="item3"><a href="Standardized_Testing.html">Standardized Testing</a></li>
+                    <li class="slider_item" id="item4"><a href="AP_Exams/AP_Exams.html">AP Exams</a></li>
+                    <li class="slider_item" id="item5"><a href="Subject_Test/Subject_Test.html">Subject Test</a></li>
+                </ul>
+                <!--Button for next-->
+                <div class="slider_button" id="next">&#10095</div>
+                <!--Button for previous-->
+                <div class="slider_button" id="prev">&#10094</div>
+            </div>
             <!--What is it?-->
             <div class="container">
                 <h3>What is it?</h3>
@@ -166,6 +173,6 @@
     <!--Links jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--Link the JavaScript file-->
-    <script src="CollegeboardJS.js"></script>
+    <script src="Standardized_TestingJS.js"></script>
 </body>
 </html>
