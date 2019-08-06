@@ -8,9 +8,16 @@
 .container {
     margin-bottom: 30px;
 }
-/*Affects a link tags that are wwithin a container*/
+/*Affects a link tags that are within a container*/
 .container a{
     color: blue;
+}
+/*Affects all list elemnts wihtin the body of the Finance webpage*/
+.main_body ul {
+    margin: 0px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
 }
 /*Container for Images*/
 .Image_container {

@@ -12,6 +12,13 @@
 .container a{
     color: blue;
 }
+/*Affects all list elemnts wihtin the body of the Collegeboard webpage*/
+.main_body ul {
+    margin: 0px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
 /******************************************************************************************************************************/
 /*Affects the list elements that are within Steps*/
 #Steps li {
@@ -21,7 +28,6 @@
 #Steps span {
     font-weight: 600;
 }
-/******************************************************************************************************************************/
 /*Affects the overall div that has the images for the steps*/
 .How_To_Register {
     display: flex;

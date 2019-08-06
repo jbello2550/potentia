@@ -54,25 +54,24 @@ body {
     color: darkred; 
 }
 /*Affects all h1 tangs within the menu_container*/
-    .menu_container h1 {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";        font-size: 1rem;
-        text-transform: capitalize;
-        font-weight: 400;
-        line-height: 1.5;
-        color: white;
-    }
+.menu_container h1 {
+    margin: 0px;
+    padding: 10px 20px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";        font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+}
 /*Affects all link tangs within the menu_container*/
 .menu_container_overall a {
     text-decoration: none;
     color: white;
+    height: 24px;
 }
-
 /*Affects the div container for each h1 element for the menu_container*/
 .menu_item a, .translate_dropdown h1 {
-    text-align: center;
-    margin: 0px;
+    height: 100%;
     padding: 10px 20px;
 }
 /*Hides the content of the dropdown till you hover over it*/
@@ -113,8 +112,8 @@ body {
     margin-right: 7.55%;
     margin-left: 7.5%;
 }
-/*affects all the text tags within main_body*/
-.main_body p{
+/*affects all the text within main_body*/
+.main_body p {
     font-family: Verdana, Geneva, sans-serif;
     font-size: 14px;
     line-height: 30px;
@@ -134,11 +133,4 @@ body {
     color: darkred;
     font-weight: bold;
     margin: 10px 0px;
-}
-/*Affects all list elemnts wihtin the body of the Finance webpage*/
-.main_body ul {
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 14px;
-    line-height: 30px;
-    margin: 0px;
 }

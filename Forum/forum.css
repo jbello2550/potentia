@@ -4,6 +4,13 @@
 * {
     box-sizing: border-box
 }
+/*Affects all list elemnts wihtin the body of the Collegeboard webpage*/
+.main_body ul {
+    margin: 0px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
 /*Affects the Login button*/
 .Login_button {
     position: absolute;

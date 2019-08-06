@@ -1,8 +1,16 @@
-/*body look*/
-body{
-  background-color: white;
-}
+/*CSS page for the Login page/
 
+/*Includes padding and margins in the width and height*/
+* {
+    box-sizing: border-box
+}
+/*Affects all list elemnts wihtin the body of the Collegeboard webpage*/
+.main_body ul {
+    margin: 0px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
 /*login info*/
 h1 {
     text-align: center;
@@ -49,7 +57,7 @@ input[type=text], input[type=password] {
 
 /* style buttons */
 button, .Login_button {
-    background-color: linen;
+    background-color: #999999;
     color: darkred;
     padding: 14px 20px;
     margin: 8px 0;

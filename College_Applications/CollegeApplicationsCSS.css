@@ -1,1 +1,13 @@
 /*CSS page for College Applications*/
+
+/*Includes padding and margins in the width and height*/
+* {
+    box-sizing: border-box
+}
+/*Affects all list elemnts wihtin the body of the College Applications webpage*/
+.main_body ul {
+    margin: 0px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
