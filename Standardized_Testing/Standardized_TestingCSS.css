@@ -13,7 +13,8 @@
     top: 50%;
     margin-top: -10px;
     font-size: 1.5em;
-    font-weight: bold
+    font-weight: bold;
+     padding: 0px 10px;
 }
 /*Affects only thead previous button*/
 #prev {
