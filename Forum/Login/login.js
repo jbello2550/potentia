@@ -6,15 +6,19 @@ $('#login').submit(function (e){
  var email = document.getElementById("eusername").value;
   var password = document.getElementById("password").value;
 
-  console.log("Email", email, "Password", password)
-
-  firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+  firebase.auth().signInWithEmailAndPassword(email, password)
+  .then(function() {
+     window.location = "https://mdabney1.github.io/potentia/Forum/Forum.html";
+  })
+  .catch(function(error) {
   // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
   });
 
-  firebase.auth().onAuthStateChanged(function(user) {
+  console.log(email, password)
+
+  /*firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
     // User is signed in.
     } else {
@@ -35,10 +39,18 @@ $('#login').submit(function (e){
   // Sign-out successful.
   }).catch(function(error) {
   // An error happened.
-  });
+  });*/
 
 });
 
+$('#logout').submit(function(e){
+
+  firebase.auth().signOut().then(function() {
+  console.log('Signed Out');
+  }, function(error) {
+  console.error('Sign Out Error', error);
+});
+});
 
 $('#signup').submit(function(e){
   e.preventDefault();
