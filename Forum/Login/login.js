@@ -7,7 +7,7 @@ $('#login').submit(function (e){
 
   firebase.auth().signInWithEmailAndPassword(email, password)
   .then(function() {
-     window.location = "https://mdabney1.github.io/potentia/Forum/Forum.html";
+     window.location = "http://potentia.me/Forum/Forum.html";
   })
   .catch(function(error) {
   // Handle Errors here.
@@ -39,7 +39,7 @@ $('#login').submit(function (e){
 $('#logout').submit(function(e){
 
   firebase.auth().signOut().then(function() {
-  window.location = "https://mdabney1.github.io/potentia/Forum/Forum.html";
+  window.location = "http://potentia.me/Forum/Forum.html";
   console.log('Signed Out');
   }, function(error) {
   console.error('Sign Out Error', error);
