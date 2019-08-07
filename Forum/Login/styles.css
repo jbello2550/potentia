@@ -28,12 +28,9 @@ h1 {
 } 
 
 /*login style*/
-#login {
-    margin: 10%;
-    margin-bottom: 5px;
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 14px;
-    line-height: 30px;
+#login{
+  margin: 10%;
+  margin-bottom:5px;
 }
 
 .logout{
@@ -54,12 +51,9 @@ h1 {
 }
 
 /*sign-up style*/
-#signup {
-    margin: 10%;
-    margin-top: 5px;
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 14px;
-    line-height: 30px;
+#signup{
+   margin: 10%;
+   margin-top:5px;
 }
 
 /*input box css*/
@@ -101,11 +95,6 @@ input[type=submit]:hover{
 }
 
 p{
-  margin-bottom: 0%;
-  margin-top: 0%;
-}
-
-.conditions {
   margin-bottom: 0%;
   margin-top: 0%;
 }
