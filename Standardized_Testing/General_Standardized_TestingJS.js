@@ -1,10 +1,10 @@
 // JavaScript source code for the Standardized_Testing
 var pages = [
-    "/potentia/Standardized_Testing/SAT/SAT.html",
-    "/potentia/Standardized_Testing/ACT/ACT.html",
-    "/potentia/Standardized_Testing/Standardized_Testing.html",
-    "/potentia/Standardized_Testing/AP_Exams/AP_Exams.html",
-    "/potentia/Standardized_Testing/Subject_Test/Subject_Test.html" 
+    "/Standardized_Testing/SAT/SAT.html",
+    "/Standardized_Testing/ACT/ACT.html",
+    "/Standardized_Testing/Standardized_Testing.html",
+    "/Standardized_Testing/AP_Exams/AP_Exams.html",
+    "/Standardized_Testing/Subject_Test/Subject_Test.html" 
 ]
 
 
