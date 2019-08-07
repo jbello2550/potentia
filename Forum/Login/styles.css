@@ -68,7 +68,7 @@ input[type=text], input[type=password] {
 
 /* style buttons */
 input[type=submit]{
-  background-color: linen;
+  background-color: lightgrey;
   color: darkred;
   padding: 14px 20px;
   margin: 8px 0;
