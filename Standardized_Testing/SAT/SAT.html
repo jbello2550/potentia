@@ -1,11 +1,168 @@
-﻿<!DOCTYPE html>
+﻿<!--SAT html-->
+
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <!--Adds mobile responsiveness-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--title-->
+    <title>SAT</title>
+    <!--Puts a icon on the side when you open a new tab-->
+    <link rel="shortcut icon" type="image/png" href="../../Favicon/Logo.png" />
+    <!--Links the General CSS to the Homepage-->
+    <link href="../../GeneralCSS.css" rel="stylesheet" type="text/css" />
+    <!--Links the general CSS for all Standardized Testing pages-->
+    <link href="../General_Standardized_TestingCSS.css" rel="stylesheet" type="text/css" />
+    <!--Links the specific CSS Standardized Testing pages-->
+    <link href="SATCSS.css" rel="stylesheet" type="text/css" />
+    <!--Adds a font family-->
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--Creates a header with all the different menu-topics-->
+    <div class="title">
+        <a href="../../index.html">
+            <img class="Top_Logo" src="../../Favicon/Top_Logo.png" />POTENTIA
+        </a>
+    </div>
+    <div class="menu_container_overall">
+        <div class="menu_container" id="menu_container_top">
+            <div class="menu_item">
+                <h1><a href="../../Finance/Finance.html">finance</a></h1>
+            </div>
+            <div class="menu_item">
+                <h1><a href="../Standardized_Testing.html">standardized testing</a></h1>
+            </div>
+            <div class="menu_item">
+                <h1><a href="../../Collegeboard/Collegeboard.html">collegeboard</a></h1>
+            </div>
+            <div class="menu_item">
+                <h1><a href="../../College_Applications/College_Applications.html">college applications</a></h1>
+            </div>
+            <div class="menu_item">
+                <h1><a href="../../Forum/Forum.html">forum</a></h1>
+            </div>
+            <div class="menu_item">
+                <h1><a href="../../Resources/Resources.html">resources</a></h1>
+            </div>
+            <div class="translate_dropdown">
+                <span style="cursor: pointer"><h1>translate</h1></span>
+                <div class="translate_dropdown_content">
+                    <p style="cursor: pointer">Arabic</p>
+                    <p style="cursor: pointer">Korean</p>
+                    <p style="cursor: pointer">Mandarian</p>
+                    <p style="cursor: pointer">Spanish</p>
+                </div>
+            </div>
+        </div>
+        <!--Link on the side that leads back home-->
+        <h3 class="Home"><a id="Home" href="../../index.html">Home</a></h3>
+    </div>
+    <!--Line at the top of the page-->
+    <div class="line"></div>
+    <!------------------------------------------------------------------------------------------------------------------------------->
+    <div class="main_body">
+        <div id="main_body_StandardizedTesting">
+            <!--the slides bar to switch between topics-->
+            <div class="slider_container">
+                <ul class="slider_content_container">
+                    <li class="slider_item"><a id="item1" href="#">SAT</a></li>
+                    <li class="slider_item"><a id="item2" href="#">ACT</a></li>
+                    <!--Title for the page-->
+                    <li class="slider_item"><a id="item3" href="#">Standardized Testing</a></li>
+                    <li class="slider_item"><a id="item4" href="#">AP Exams</a></li>
+                    <li class="slider_item"><a id="item5" href="#">Subject Test</a></li>
+                </ul>
+                <!--Button for next-->
+                <div class="slider_button" id="next">&#10095</div>
+                <!--Button for previous-->
+                <div class="slider_button" id="prev">&#10094</div>
+            </div>
+            <!--Container for all the Standardized Test information-->
+            <!--What is it?-->
+            <div class="container">
+                <h3>What is it?</h3>
+                <p>
+                    The SAT is one of two important standardized college admission tests in the United States, the other being the ACT. The SAT is run by 
+                    the College Board along with the PSAT and the AP program, or advanced placement program. The SAT is an aptitude test, meaning it shows 
+                    your preparedness for college by measuring key skills such as reading comprehension, computational ability, and clarity of expression. 
+                    The SAT has 4 sections each varying in length, these sections are evidence-based reading, writing, math, which is split into two sections, 
+                    and the optional essay with. The SAT has a maximum score of 1600 without the essay. If a student takes the SAT with the essay the essay 
+                    score is not factored into the main test score. Many states require some, if not all, juniors to take the SAT, including South Carolina, 
+                    Rhode Island, Ohio, and others. The SAT is extremely important because most colleges and universities require students to send in their 
+                    SAT or ACT scores as part of their college application.
 
+                </p>
+            </div>
+            <!--How to Register-->
+            <div class="container">
+                <h3>How to Register</h3>
+                <p>
+                    In order to register for the SAT, students need to log into or create a College Board account. For more information on creating a College
+                    Board account <a href="https://cbaccount.collegeboard.org/iamweb/smartRegister?appId=292&DURL=https%3A%2F%2Fnsat.collegeboard.org%2Fsatweb%2Flogin.jsp">click here</a>
+                    or visit the College Board section in our menu.
+                </p>
+                <p>
+                    <b>Below are the steps to registering for the SAT:</b>
+                </p>
+                <ol>
+                    <li>Go to the <a href="https://signup.collegeboard.org/accepted-everywhere/?s_kwcid=AL!4330!10!73530061491218!73529998034609&ef_id=XREBfgAAAZdNqzAO:20190805145559:s" target="_blank">College Board website's SAT registration page</a></li>
+                    <li>Click the “Register Now” button</li>
+                    <li>Sign into or create a College Board account</li>
+                    <li>Once logged in, fill out the "SAT Registration" form and follow the directions throughout</li>
+                </ol>
+            </div>
+            <!--Dates and Deadlines-->
+            <div class="container">
+                <h3>Dates and Deadlines</h3>
+                <p>
+                    <b>SAT</b> testing occurs in the months of August, October, November, December, March, May, and June, but the exact dates vary from year to year.
+                    If your child plans on taking this tst, it is important to keep up with these dates and be aware how many oppurtunities your child has to take
+                    the test, as well as when and where the test will be held.
+                </p>
+                <p><b>The upcoming deadlines are:</b></p>
+                <ul>
+                    <b>2019</b>
+                    <li>24th of August</li>
+                    <li>5th of October*</li>
+                    <li>2nd of November</li>
+                    <li>7th of December*</li>
+                    <br>
+                    <b>2020</b>
+                    <li>14th of March*</li>
+                    <li>2nd of May*</li>
+                    <li>6th of June</li>
+                    <li>29th of August*</li>
+                    <li>3rd of October*</li>
+                    <li>7th of November</li>
+                    <li>5th of December*</li>
+                    <br>
+                    <b>2021</b>
+                    <li>13th of March*</li>
+                    <li>8th of May*</li>
+                    <li>5th of June</li>
+                </ul>
+                <p>
+                    *These dates include international testing locations.</></br>
+                    <b>**All registration deadlines are 1 month before their respective testing date. All LATE registration deadlines are 13 days before their respective testing date if registering online or by phone. If mailing in your late registration, the deadline is 1 week before the standard.**</b>
+                </p>
+            </div>
+            <!--Citations-->
+            <div class="container">
+                <h3>Citations</h3>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Links jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Link the JavaScript file-->
+    <script src="Standardized_TestingJS.js"></script>
 </body>
 </html>

@@ -1,0 +1,6 @@
+﻿/*CSS page for the SAT*/
+
+/*Changes selected topic to darkred*/
+#item1 {
+    color: darkred;
+}
