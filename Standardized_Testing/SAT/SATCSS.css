@@ -30,4 +30,55 @@ table, th, td {
     table ul {
         margin: 0px
     }
+/*****************************************************************************************************************************************/
+/*Affects the overall div that has the images for the steps*/
+.How_To_Register {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+/*Each indivual div for each image*/
+.Register_image {
+    text-align: center;
+}
+/*Affects the overall div that has the images for the steps*/
+.Register_image p {
+    margin-bottom: 2.5px;
+    margin-top: 0px;
+}
+/*Affects each img inside the How to Register*/
+.Register_image img {
+    width: 100%;
+    border: 3.5px solid darkred;
+    border-radius: 7.5px;
+}
+/* Hide all images except the first */
+.Register_image:not(:first-child) {
+    display: none;
+}
+/* Affects the Next and Previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+/*Position the prev button to the left */
+.prev {
+    left: 0;
+}
+/*Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/*Makes the buttons black when you hover*/
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
 
