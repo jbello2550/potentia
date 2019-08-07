@@ -7,7 +7,7 @@ $(document).ready(function () {
         decreaseImage();
         $('#im_' + currentImage).stop().fadeIn(1);
     });
-    $('#next').on('click', function () {
+    $('#Collegeboard_next').on('click', function () {
         // Change to the next image
         $('#im_' + currentImage).stop().fadeOut(1);
         increaseImage();

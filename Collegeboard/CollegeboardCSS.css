@@ -41,7 +41,7 @@
 /*Affects the overall div that has the images for the steps*/
 .Register_image p {
     margin-bottom: 2.5px;
-    margin-top: 15px;
+    margin-top: 0px;
 }
 /*Affects each img inside the How to Register*/
 .Register_image img {
