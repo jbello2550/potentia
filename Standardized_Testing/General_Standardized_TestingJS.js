@@ -1,10 +1,10 @@
 // JavaScript source code for the Standardized_Testing
 var pages = [
-    "/C:/Users/joshu/OneDrive/SAMS/Potentia_Webpage/Standardized_Testing/SAT/SAT.html",
-    "/C:/Users/joshu/OneDrive/SAMS/Potentia_Webpage/Standardized_Testing/ACT/ACT.html",
-    "/C:/Users/joshu/OneDrive/SAMS/Potentia_Webpage/Standardized_Testing/Standardized_Testing.html",
-    "/C:/Users/joshu/OneDrive/SAMS/Potentia_Webpage/Standardized_Testing/AP_Exams/AP_Exams.html",
-    "/C:/Users/joshu/OneDrive/SAMS/Potentia_Webpage/Standardized_Testing/Subject_Test/Subject_Test.html" 
+    "/potentia/Standardized_Testing/SAT/SAT.html",
+    "/potentia/Standardized_Testing/ACT/ACT.html",
+    "/potentia/Standardized_Testing/Standardized_Testing.html",
+    "/potentia/Standardized_Testing/AP_Exams/AP_Exams.html",
+    "/potentia/Standardized_Testing/Subject_Test/Subject_Test.html" 
 ]
 
 
