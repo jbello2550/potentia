@@ -21,28 +21,39 @@ h1 {
 }
 
 /*form look*/
-form {
-  border: 2.5px solid;
+.main {
+  border: 3px solid;
   padding: 20px;
-  background-color: white;
+  background-color:white;
 } 
 
 /*login style*/
-#login {
-    margin: 10%;
-    margin-bottom: 5px;
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 14px;
-    line-height: 30px;
+#login{
+  margin: 10%;
+  margin-bottom:5px;
+}
+
+.logout{
+  background-color:lightgrey;
+  color:darkred;
+  font-weight: bold;
+  padding: 20px 28px;
+  width: auto;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  margin-top:5%;
+  margin-bottom:0%
+}
+
+.logout:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 /*sign-up style*/
-#signup {
-    margin: 10%;
-    margin-top: 5px;
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 14px;
-    line-height: 30px;
+#signup{
+   margin: 10%;
+   margin-top:5px;
 }
 
 /*input box css*/
@@ -56,18 +67,19 @@ input[type=text], input[type=password] {
 }
 
 /* style buttons */
-button, .Login_button {
-    background-color: #999999;
-    color: darkred;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    font-weight: 500;
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 16px;
-    line-height: 30px;
+input[type=submit]{
+  background-color: linen;
+  color: darkred;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+input[type=submit]:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 /*style for  cancel button*/
@@ -76,21 +88,13 @@ button, .Login_button {
   padding: 10px 18px;
   background-color: darkred;
   color: linen;
-
 }
 
-/* "Forgot password" text */
-span.psw {
-    float: right;
-    padding-top: 16px;
-    font-size: 15px;
-}
-/*Affects the link for Forgot Password*/
-.psw a {
-    color: blue;
+.cancelbtn:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.conditions {
+p{
   margin-bottom: 0%;
   margin-top: 0%;
 }
