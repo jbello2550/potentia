@@ -6,7 +6,6 @@
 }
 /*Affects all the elemnts within the table*/
 table {
-    min-width: 700px;
     font-family: Verdana, Geneva, sans-serif;
     font-size: 14px;
     line-height: 30px;
