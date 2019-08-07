@@ -23,7 +23,7 @@ table, th, td {
     }
     /*Affects only the data for the tables*/
     table td {
-        height: 63px;
+        height: 40px;
         padding-left: 2em;
     }
     /*Affects only the unordered list within tables*/
