@@ -64,28 +64,32 @@
     <div class="line"></div>
     <!------------------------------------------------------------------------------------------------------------------------------->
     <!--Forum-->
-    <form id='login'>
-        <div class="login-contain">
+    <form class='main' id='login'>
+        	<div class="login-contain">
             <h1> LOGIN </h1>
-            <label for="uname"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="uname" id='eusername'>
+        	<label for="uname"><b>Email</b></label>
+        	<input type="text" placeholder="Enter Email" name="uname" id='eusername'>
 
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" id='password'>
+        	<label for="psw"><b>Password</b></label>
+        	<input type="password" placeholder="Enter Password" name="psw" id='password' >
 
-            <input class="Login_button" type="submit" value='Login'></input>
-        </div>
+        	<input type="submit" value='Login'></input>
+        	</div>
 
-        <div class="login">
-            <a href='../Forum.html'><button type="button" class="cancelbtn">Cancel</button></a>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
-    </form>
+        	<div class="login">
+        	 <a href='../Forum/Forum.html'><button type="button" class="cancelbtn">Cancel</button></a>
+        	<span class="psw">Forgot <a href="#">password?</a></span>
+        	</div>
+		</form>
 
-    <h1> OR </h1>
+        <form id='logout'>
+        <button type='button' class='logout'> Log Out </button>
+        </form>
 
-    <form id='signup'>
-        <div class="container">
+        <h1> or </h1>
+         
+        <form class='main' id='signup'>
+            <div class="container">
             <h1>SIGN UP</h1>
             <p>Please fill in this form to create an account.</p>
 
@@ -94,18 +98,18 @@
 
             <br><br>
             <label for="psw"><b>Password</b></label>
-            <p id='conditions'> Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters</p>
+            <p> Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters</p>
             <input type="password" placeholder="Create a Password" name="psw" id='passwords' pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
 
             <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
+            <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>
             <div>
-                <button type="submit" class="signupbtn">Sign Up</button>
-                <a href='../Forum.html'><button type="button" class="cancelbtn">Cancel</button></a>
+            <button type="submit" class="signupbtn">Sign Up</button>
+            <a href='../Forum/Forum.html'><button type="button" class="cancelbtn">Cancel</button></a>
             </div>
-        </div>
-    </form>
+  </div>
+        </form>
 
     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
