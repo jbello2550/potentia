@@ -134,3 +134,26 @@ body {
     font-weight: bold;
     margin: 10px 0px;
 }
+
+
+.main_body b {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
+.main_body u {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
+.main_body ul {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
+.main_body ol {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
+    
