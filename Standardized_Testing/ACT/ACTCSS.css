@@ -13,10 +13,14 @@ table {
 }
 table, th, td {
     border: 1px solid black;
-    border-collapse: collapse;
-    padding-left: 1em;    
+    border-collapse: collapse;   
+}
+/*Affects only the data for the tables*/
+table td {
+    padding: .5em 1em;
 }
 /*Affects only the header for the tables*/
 table th {
     background-color: lightgray;
+    padding: .5em 1em;
 }
