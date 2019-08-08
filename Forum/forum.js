@@ -1,14 +1,15 @@
-var firebaseConfig = {
-    apiKey: "AIzaSyB19HZXXiWEESBv2MULUzBk5mbf7P3Ip1Y",
-    authDomain: "graphic-pattern-247613.firebaseapp.com",
-    databaseURL: "https://graphic-pattern-247613.firebaseio.com",
-    projectId: "graphic-pattern-247613",
-    storageBucket: "",
-    messagingSenderId: "1096747484004",
-    appId: "1:1096747484004:web:f0091ec8df574d7d"
-};
 
-firebase.initializeApp(firebaseConfig);
+        var firebaseConfig = {
+            apiKey: "AIzaSyAH0-dtYwDZ1_XO8ZwAE7HEAfR2AO-_XY8",
+            authDomain: "potentia-85501.firebaseapp.com",
+            databaseURL: "https://potentia-85501.firebaseio.com",
+            projectId: "potentia-85501",
+            storageBucket: "",
+            messagingSenderId: "615187511736",
+            appId: "1:615187511736:web:3c21267a349c677d"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
 
 var db = firebase.firestore();
 
