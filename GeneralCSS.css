@@ -49,13 +49,13 @@ body {
     flex-wrap: wrap;
     right: 0px;
     bottom: 5px;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
 }
 #translate p {
     display: inline;
     margin: 0px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
 }
 /*Affects the div container that has each menu-item*/
 .menu_container {
