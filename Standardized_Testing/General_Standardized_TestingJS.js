@@ -33,7 +33,7 @@ document.getElementById("next").addEventListener("click", function (event) {
 function next() {
     var current = location.pathname;
     var idx = pages.indexOf(current);
-    if (idx > 4) {
+    if (idx > 3) {
         idx = 0
     }
     location.replace(pages[idx+1]);
