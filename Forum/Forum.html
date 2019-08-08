@@ -25,7 +25,19 @@
         <a href="../index.html">
             <img class="Top_Logo" src="../Favicon/Top_Logo.png" />POTENTIA
         </a>
+        <!--The Translate button-->
+        <div class="translate">
+            <p>Translate:</p>
+            <div id="google_translate_element"></div>
+        </div>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </div>
+    <!--Creates a header with all the different menu-topics-->
     <div class="menu_container_overall">
         <div class="menu_container" id="menu_container_top">
             <div class="menu_item">
@@ -79,7 +91,7 @@
     <div id="container" style="margin-top: 50px; border-radius: 10px; padding-top: 100px; padding-bottom: 100px;">
         <div id="user_profile" style="margin-left: -130px; margin-top: -34px; text-align: center; margin-bottom: 70px;">
             <form id="post">
-                <input type="text" style="border-top-right-radius: 5px; width: 450px; height: 120px; border: 1px solid #E4E3E2; border-bottom-right-radius: 5px; margin-left: 277.5px; text-indent: 10px; background-color: #F0F0F0; font-family: Verdana, Geneva, sans-serif; font-size: 14px;" id="post_here" placeholder="Caption" >
+                <input type="text" style="border-top-right-radius: 5px; width: 450px; height: 120px; border: 1px solid #E4E3E2; border-bottom-right-radius: 5px; margin-left: 277.5px; text-indent: 10px; background-color: #F0F0F0; font-family: Verdana, Geneva, sans-serif; font-size: 14px;" id="post_here" placeholder="Caption">
                 <div style="margin-top: -170px; margin-left: -324px;">
                     <input type="text" style="width: 150px; height: 120px; border: 1px solid #E4E3E2; text-indent: 10px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; margin-top: 50px; background-color: #F0F0F0; font-family: Verdana, Geneva, sans-serif; font-size: 14px;" id="topic_text" placeholder="Main Topic">
                     <div>

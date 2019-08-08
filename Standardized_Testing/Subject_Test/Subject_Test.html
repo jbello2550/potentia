@@ -28,7 +28,19 @@
         <a href="../../index.html">
             <img class="Top_Logo" src="../../Favicon/Top_Logo.png" />POTENTIA
         </a>
+        <!--The Translate button-->
+        <div class="translate">
+            <p>Translate:</p>
+            <div id="google_translate_element"></div>
+        </div>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </div>
+    <!--Creates a header with all the different menu-topics-->
     <div class="menu_container_overall">
         <div class="menu_container" id="menu_container_top">
             <div class="menu_item">
@@ -94,7 +106,7 @@
                     take or may require students to take specific test along with one of the student’s choosing. If students choose what tests
                     they can choose out of a multitude of different types of subject tests. They are:
                 </p>
-                <table class="What_is_it"style="width: 100%">
+                <table class="What_is_it" style="width: 100%">
                     <tr>
                         <th>Math Subject Tests:</th>
                         <td>
@@ -135,13 +147,13 @@
             <div class="container">
                 <h3>How to Register</h3>
                 <p>
-                </p>              
+                </p>
             </div>
             <!--Dates and Deadlines-->
             <div class="container">
                 <h3>Dates and Deadlines</h3>
 
-                <table class="Dates_and_Deadlines"style="width: 100%">
+                <table class="Dates_and_Deadlines" style="width: 100%">
                     <tr>
                         <th>Test Date</th>
                         <th>Tests Available</th>
