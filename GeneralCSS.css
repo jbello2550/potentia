@@ -50,11 +50,6 @@ body {
     right: 0px;
     bottom: 0px;
 }
-#google_translate_element {
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-}
 .translate p {
    float: left;
     margin: 0px;
