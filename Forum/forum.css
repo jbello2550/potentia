@@ -21,7 +21,7 @@
     font-size: 20px;
     font-weight: 700;
 } 
-/* Madison */
+/* Madison 
 .logout{
   background-color:lightgrey;
   color:darkred;
@@ -39,7 +39,7 @@
 .logout:hover{
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 } 
-/* End Madison */
+End Madison */
 
 /*Affects the title of the page*/
 #title_forum h1 {
