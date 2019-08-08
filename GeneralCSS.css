@@ -42,11 +42,14 @@ body {
 #Home {
     color: black;
 }
-/*Affects the gggole translate button*/
+/*Affects the google translate button*/
 #google_translate_element {
     position: absolute;
     right: 0px;
     bottom: 5px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
 }
 /*Affects the div container that has each menu-item*/
 .menu_container {
