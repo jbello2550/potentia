@@ -46,6 +46,9 @@ body {
 .translate {
     display: flex;
     flex-wrap: wrap;
+    position: absolute;
+    right: 0px;
+    bottom: 5px;
 }
 #google_translate_element {
     position: absolute;
