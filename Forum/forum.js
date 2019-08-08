@@ -13,7 +13,7 @@ firebase.initializeApp(firebaseConfig);
 
 var db = firebase.firestore();
 
-/* Madison */
+/*Madison
 function loginChange(){
 console.log('here')
 var user = firebase.auth().currentUser;
@@ -40,7 +40,7 @@ $('#logout').submit(function(e){
   console.error('Sign Out Error', error);
   });
 });
-/* end Madison */
+end Madison */
 
 
 $("#post").submit(function(e) {
@@ -193,6 +193,6 @@ function loadPosts(){
 
 $(document).ready(function(){
   loadPosts();
-/* Madison */
-  loginChange()
+/* Madison 
+  loginChange()*/
 });
