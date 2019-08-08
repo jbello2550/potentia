@@ -44,9 +44,11 @@ body {
 }
 /*Affects the google translate button*/
 #translate {
-    position: absolute;
     display: flex;
     flex-wrap: wrap;
+}
+#google_translate_element {
+    position: absolute;
     right: 0px;
     bottom: 5px;
 }
