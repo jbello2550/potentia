@@ -12,6 +12,15 @@ firebase.initializeApp(firebaseConfig);
 
 var db = firebase.firestore();
 
+/* 
+var user = firebase.auth().currentUser;
+var login = document.getElementById(login_page)
+var logout = document.getElementById(logout_button)
+if(user){
+   login = logout
+}
+*/
+
 $("#post").submit(function(e) {
   e.preventDefault();
 
