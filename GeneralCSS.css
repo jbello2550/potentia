@@ -48,15 +48,15 @@ body {
     flex-wrap: wrap;
     position: absolute;
     right: 0px;
-    bottom: 5px;
+    bottom: 0px;
 }
 #google_translate_element {
     position: absolute;
     right: 0px;
-    bottom: 5px;
+    bottom: 0px;
 }
 .translate p {
-    display: inline;
+   float: left;
     margin: 0px;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
