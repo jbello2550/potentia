@@ -47,7 +47,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    right: 0px;
+    right: 7.5px;
     bottom: 3.5px;
     align-items: center;
 }
