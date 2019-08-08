@@ -14,6 +14,7 @@ var db = firebase.firestore();
 
 /* Madison */
 function loginChange(){
+console.log('here')
 var user = firebase.auth().currentUser;
 var login = document.getElementById('login_page')
 var logout = document.getElementById('logout')
@@ -24,6 +25,7 @@ var logout = document.getElementById('logout')
  login.style.display = 'block';
  logout.style.display= 'none';
  }
+console.log('done')
 }
 
 
