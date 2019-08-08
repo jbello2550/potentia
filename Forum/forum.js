@@ -26,6 +26,8 @@ var logout = document.getElementById('logout')
  }
 }
 
+
+
 $('#logout').submit(function(e){
 
   firebase.auth().signOut().then(function() {
@@ -187,5 +189,7 @@ function loadPosts(){
 };
 
 $(document).ready(function(){
-  loadPosts()
+  loadPosts();
+/* Madison */
+  loginChange()
 });
