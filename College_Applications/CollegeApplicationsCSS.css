@@ -11,3 +11,33 @@
     font-size: 14px;
     line-height: 30px;
 }
+/*Affects tehc otnainer which holds the information*/
+#General_College_Application_Info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*Affects the image for the Common App Logo*/
+.Common_App_Logo {
+    border-radius: 50px;
+    width: 100%;
+}
+.General_College_Application_Info_img {
+    width: 75%;
+}
+.General_College_Application_Info_p {
+    width: 100%;
+    margin: 0px 15px;
+}
+/*Changes when the screen changes*/
+@media only screen and (min-width: 1200px){
+    /*Affects the img tag for General Common Application*/
+    .General_College_Application_Info_img {
+        width: 25%;
+    }
+    /*Affects the p tag for General Common Application*/
+    .General_College_Application_Info_p {
+        width: 72%;
+        margin: 0px 15px;
+    }
+}
