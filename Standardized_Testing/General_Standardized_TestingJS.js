@@ -18,7 +18,7 @@ function previous() {
     var current = location.pathname;
     var idx = pages.indexOf(current);
     if (idx < 0) {
-        idx = 4
+        idx = 3
     }
     location.replace(pages[idx - 1]);
 }
@@ -34,7 +34,7 @@ function next() {
     var current = location.pathname;
     var idx = pages.indexOf(current);
     if (idx > 3) {
-        idx = 0
+        idx = -1
     }
     location.replace(pages[idx+1]);
 }
