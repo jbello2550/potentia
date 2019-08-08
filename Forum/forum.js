@@ -12,6 +12,32 @@ firebase.initializeApp(firebaseConfig);
 
 var db = firebase.firestore();
 
+/* Madison */
+function loginChange(){
+var user = firebase.auth().currentUser;
+var login = document.getElementById('login_page')
+var logout = document.getElementById('logout')
+ if(user){
+ login.style.display = 'none';
+ logout.style.display = 'block';
+ } else { 
+ login.style.display = 'block';
+ logout.style.display= 'none';
+ }
+}
+
+$('#logout').submit(function(e){
+
+  firebase.auth().signOut().then(function() {
+  window.location = "http://potentia.me/Forum/Forum.html";
+  console.log('Signed Out');
+  }, function(error) {
+  console.error('Sign Out Error', error);
+  });
+});
+/* end Madison */
+
+
 $("#post").submit(function(e) {
   e.preventDefault();
 
