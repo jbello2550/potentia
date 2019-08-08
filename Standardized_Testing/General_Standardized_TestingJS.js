@@ -18,7 +18,7 @@ function previous() {
     var current = location.pathname;
     var idx = pages.indexOf(current);
     if (idx < 1) {
-        idx = 3
+        idx = 5
     }
     location.replace(pages[idx - 1]);
 }
