@@ -46,7 +46,7 @@ body {
 #google_translate_element {
     position: absolute;
     right: 0px;
-    top: 0px;
+    bottom: 5px;
 }
 /*Affects the div container that has each menu-item*/
 .menu_container {
