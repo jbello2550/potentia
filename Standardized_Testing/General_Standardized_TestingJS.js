@@ -17,7 +17,7 @@ document.getElementById("prev").addEventListener("click", function () {
 function previous() {
     var current = location.pathname;
     var idx = pages.indexOf(current);
-    if (idx < 0) {
+    if (idx < 1) {
         idx = 3
     }
     location.replace(pages[idx - 1]);
