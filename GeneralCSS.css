@@ -43,15 +43,17 @@ body {
     color: black;
 }
 /*Affects the google translate button*/
-#google_translate_element {
+#translate {
     position: absolute;
+    display: flex;
+    flex-wrap: wrap;
     right: 0px;
     bottom: 5px;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
     font-weight: 700;
 }
-#google_translate_element p {
+#translate p {
     display: inline;
     margin: 0px;
 }
