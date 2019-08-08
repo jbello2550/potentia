@@ -51,6 +51,9 @@ body {
     font-size: 20px;
     font-weight: 700;
 }
+#google_translate_element p {
+    display: inline;
+}
 /*Affects the div container that has each menu-item*/
 .menu_container {
     display: flex;
