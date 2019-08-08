@@ -53,6 +53,7 @@ body {
 }
 #google_translate_element p {
     display: inline;
+    margin: 0px;
 }
 /*Affects the div container that has each menu-item*/
 .menu_container {
