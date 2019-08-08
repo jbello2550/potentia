@@ -1,7 +1,7 @@
 ﻿<!--Homepage html-->
 <!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <!--Adds mobile responsiveness-->
@@ -46,18 +46,23 @@
             <div class="menu_item">
                 <h1><a href="Resources/Resources.html">resources</a></h1>
             </div>
-            <div class="translate_dropdown">
-                <span style="cursor: pointer"><h1>translate</h1></span>
-                <div class="translate_dropdown_content">
-                    <p style="cursor: pointer">Arabic</p>
-                    <p style="cursor: pointer">Korean</p>
-                    <p style="cursor: pointer">Mandarian</p>
-                    <p style="cursor: pointer">Spanish</p>
-                </div>
+            <div class="menu_item">
+                <h1><a href="#">donate</a></h1>
             </div>
         </div>
         <!--Link on the side that leads back home-->
         <h3 class="Home"><a id="Home" href="index.html">Home</a></h3>
+
+        <!--The Translate button-->
+        <div id="google_translate_element"></div>
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+            }
+        </script>
+
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </div>
     <!--Line at the top of the page-->
     <div class="line"></div>
@@ -69,16 +74,6 @@
         </div>
     </div>
     <!------------------------------------------------------------------------------------------------------------------------------->
-    <div id="google_translate_element"></div>
-
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
-        }
-    </script>
-
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
     <div class="main_body">
         <div class="main_body_homepage_container">
             <div class="Information">
