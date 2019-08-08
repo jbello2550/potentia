@@ -43,7 +43,7 @@ body {
     color: black;
 }
 /*Affects the google translate button*/
-#translate {
+.translate {
     display: flex;
     flex-wrap: wrap;
 }
@@ -52,7 +52,7 @@ body {
     right: 0px;
     bottom: 5px;
 }
-#translate p {
+.translate p {
     display: inline;
     margin: 0px;
     font-family: 'Open Sans Condensed', sans-serif;
