@@ -66,68 +66,56 @@
         <h3 class="Home"><a id="Home" href="../index.html">Home</a></h3>
         <div id='login_button'><h3 class="Login_button"><a style="color: black" href="Login/Login.html">Login</a></h3></div>
         
-        <!-- Madison 
-        <div id='logout_button'>
-        <form id='logout'>
-        <button type='button' class='logout'> Log Out </button>
-        </form>
-        </div> -->
-        
     </div>
     <!--Line at the top of the page-->
-    <div class="line"></div>
+        <div class="line" style="margin-top: -19px;"></div>
 
     <div id="title_forum" style="text-align: center; margin-bottom: -85px; font-family: Verdana, Geneva, sans-serif; font-size: 14px " onclick="options()">
-        <h1 style="margin-bottom: -10px; font-family:'Open Sans Condensed', sans-serif"> General Forum </h1><br>
+        <h1 style="margin-bottom: -10px; font-family:'Open Sans Condensed', sans-serif" class="drop_start"> General Forum </h1><br>
         <span style="font-family: Verdana, Geneva, sans-serif; font-size: 14px;"> click to see more topics </span>
         <img src="https://www.stickpng.com/assets/images/58f8bcf70ed2bdaf7c128307.png" style="height: 20px; margin-bottom: -5px;"><br>
-        <div id="forum_options" style="margin-top: 25px; display: none; color: #5E5E5E;">
-            <span class="SAT" style="padding-right: 30px; padding-left: 30px; font-family: Verdana, Geneva, sans-serif;"> SAT </span>
-            <span class="ACT" style="padding-right: 30px; font-family: Verdana, Geneva, sans-serif; font-size: 14px "> ACT </span>
-            <span class="Finances" style="padding-right: 30px; font-family: Verdana, Geneva, sans-serif; font-size: 14px "> Finances </span>
-            <span class="App" style="padding-right: 30px; font-family: Verdana, Geneva, sans-serif;  font-size: 14px"> Common App </span>
-            <span class="General" style="padding-right: 30px; font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: black;"> General </span>
+        <div id="forum_options" class="topics" style="margin-top: 25px; display: none;color: #5E5E5E;">
+            <span class="forum-SAT" style="padding-right: 30px; padding-left: 30px; font-family: Verdana, Geneva, sans-serif;"><a href="forum_SAT.html" id="option" onmouseover="shadeBlack(this)" onmouseout="reshade(this)"> SAT </a></span>
+            <span class="forum-ACT" style="padding-right: 30px; font-family: Verdana, Geneva, sans-serif; font-size: 14px "><a href="Forum_ACT.html" id="option" onmouseover="shadeBlack(this)" onmouseout="reshade(this)"> ACT </a></span>
+            <span class="forum-Finances" style="padding-right: 30px; font-family: Verdana, Geneva, sans-serif; font-size: 14px "><a href="forum_finances.html" id="option" onmouseover="shadeBlack(this)" onmouseout="reshade(this)"> Finances </a></span>
+            <span class="forum-App" style="padding-right: 30px; font-family: Verdana, Geneva, sans-serif;  font-size: 14px"><a href="forum_commonapp.html" id="option" onmouseover="shadeBlack(this)" onmouseout="reshade(this)"> Common App </a></span>
+            <span class="forum-General" style="padding-right: 30px; font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: black;"><a href="forum.html" id="option_chosen"> General </a></span>
         </div>
     </div>
 
     <div id="container" style="margin-top: 50px; border-radius: 10px; padding-top: 100px; padding-bottom: 100px;">
         <div id="user_profile" style="margin-left: -130px; margin-top: -34px; text-align: center; margin-bottom: 70px;">
             <form id="post">
-                <input type="text" style="border-top-right-radius: 5px; width: 450px; height: 120px; border: 1px solid #E4E3E2; border-bottom-right-radius: 5px; margin-left: 277.5px; text-indent: 10px; background-color: #F0F0F0; font-family: Verdana, Geneva, sans-serif; font-size: 14px;" id="post_here" placeholder="Caption">
+                <input type="text" style="border-top-right-radius: 5px; width: 450px; height: 120px; border: 1px solid #E4E3E2; border-bottom-right-radius: 5px; margin-left: 277.5px; text-indent: 10px; background-color: #F0F0F0; font-family: Verdana, Geneva, sans-serif; font-size: 14px;" id="post_here" placeholder="Caption" >
                 <div style="margin-top: -170px; margin-left: -324px;">
-                    <input type="text" style="width: 150px; height: 120px; border: 1px solid #E4E3E2; text-indent: 10px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; margin-top: 50px; background-color: #F0F0F0; font-family: Verdana, Geneva, sans-serif; font-size: 14px;" id="topic_text" placeholder="Main Topic">
+                    <input type="text" style="width: 150px; height: 120px; border: 1px solid #E4E3E2; text-indent: 10px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; margin-top: 50px; background-color: #F0F0F0; font-family: Verdana, Geneva, sans-serif; font-size: 14px; margin-bottom: -19.4px;" id="topic_text" placeholder="Main Topic">
+
                     <div>
-                        <input type="submit" style="margin-top: 10px; margin-left: 990px; border: 0px; color: #F0F0F0; background-color: darkred; padding: 6px; border-radius: 3px; position: absolute; margin-top: -32px; margin-left: 483px; font-family: Verdana, Geneva, sans-serif;" value="Post">
+                        <input type="text" style="width: 150px; height: 5%; border: 1px solid #E4E3E2; text-indent: 10px; border-top-left-radius: 0px; border-bottom-left-radius: 5px; background-color: #F0F0F0; font-family: Verdana, Geneva, sans-serif; font-size: 14px; padding-top: 20px; margin-top: -4.8%;" id="name_text" placeholder="Name">
+                        <input type="submit" style="margin-top: 10px; margin-left: 990px; border: 0px; color: #F0F0F0; background-color: steelblue; padding: 6px; border-radius: 3px; position: absolute; margin-top: -32px; margin-left: 483px; font-family: Verdana, Geneva, sans-serif;" value="Post">
                     </div>
                 </div>
             </form>
+                <div id="cant_post" style="display:none; text-align: center; margin-left: 10%; padding-top: 2%;"> 
+                    <span style="font-family: Verdana, Geneva, sans-serif; font-size: 14px;"> { Please include a topic and a caption to make a post } </span> 
+                </div>
         </div>
+
         <div id="wrapper" style="text-align: center; padding-top: 30px; margin-left: 45px; margin-top: -80px; margin-bottom: 30px;">
             <form id="search" style="display: inline-block;">
                 <input type="text" style="border-radius: 25px; width: 450px; border-style: solid; border-color: #F0F0F0; height: 21px;" id="search_bar">
-                <input type="submit" style="border: 0px; color: #F0F0F0; background-color: darkred; padding: 6px; border-radius: 3px; font-family: Verdana, Geneva, sans-serif;" value="Search">
-                <img src="https://icon-library.net/images/white-search-icon-transparent-background/white-search-icon-transparent-background-13.jpg" style="height: 15px; position: absolute; margin-top: -21px; margin-left: 180px;">
+                <input type="submit" style="border: 0px; color: #F0F0F0; background-color: steelblue; padding: 6px; border-radius: 3px; font-family: Verdana, Geneva, sans-serif;" value="Search">
+                <img src="https://icon-library.net/images/white-search-icon-transparent-background/white-search-icon-transparent-background-13.jpg" style="height: 12px; position: absolute; margin-top: -19px; margin-left: 180px;">
             </form>
         </div>
-    </div>
-     <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
 
-    <!-- Add Firebase products that you want to use -->
-    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-firestore.js"></script>
-    <script>
-        var firebaseConfig = {
-            apiKey: "AIzaSyAH0-dtYwDZ1_XO8ZwAE7HEAfR2AO-_XY8",
-            authDomain: "potentia-85501.firebaseapp.com",
-            databaseURL: "https://potentia-85501.firebaseio.com",
-            projectId: "potentia-85501",
-            storageBucket: "",
-            messagingSenderId: "615187511736",
-            appId: "1:615187511736:web:3c21267a349c677d"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-    </script>
+        <div id="comment_div" style="display: none;">
+            <form id="response_div_form">
+                <input type="text" id="respond_here" style="height: 3vh; width: 60vw; padding-left: 1%" placeholder="Type your comment" c_id=" ">
+            </form>
+        </div>
+
+    </div>
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
