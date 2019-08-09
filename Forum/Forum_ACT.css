@@ -1,3 +1,9 @@
+/*CSS for the Forum ACT page*/
+
+/*Affects all elements so they include margin and padding in the height and width*/
+* {
+    box-sizing: border-box;
+}
 body {
     background-color: white;
 }

@@ -84,7 +84,7 @@ function addNewItem(doc){
 	//styling the post box
 	post_box.classList.add("post_box");
 	post_box.style.marginLeft = "12vw";
-	post_box.style.backgroundColor = "#F0F0F0";
+    post_box.style.backgroundColor = "#F0F0F0";
 	post_box.style.width = "75%";
 	post_box.style.paddingTop = "0px";
 	post_box.style.paddingBottom = "0px";
@@ -92,7 +92,8 @@ function addNewItem(doc){
 	post_box.style.border = "1px solid #D9D0D9";
 	post_box.style.paddingLeft = "20px";
 	post_box.style.flex = "1";
-	post_box.style.height = "auto";
+    post_box.style.height = "auto";
+    post_box.style.position = "relative";
 
 	var post_id = doc.id;
 	post_box.id = post_id;
@@ -164,7 +165,7 @@ function addNewItem(doc){
 	reply.style.marginRight = "5%";
 	reply.style.border = "0px";
 	reply.style.color = "#F0F0F0";
-	reply.style.backgroundColor = "steelblue";
+	reply.style.backgroundColor = "darkred";
 	reply.style.padding = "6px";
 	reply.style.borderRadius = "3px";
 	reply.style.fontFamily = "'Open Sans Condensed', sans-serif";
@@ -182,10 +183,10 @@ function addNewItem(doc){
 	var date_node = document.createElement("p");
 	var date = new Date();
 	date_node.innerHTML = date;
-	date_node.style.fontSize = "7%";
-	date_node.style.marginLeft = "78%";
-	date_node.style.marginRight = "15%";
-	date_node.style.width = "10%";
+	date_node.style.fontSize = 13 + "px";
+	date_node.style.position = "absolute";
+	date_node.style.left = 10 + "px";
+    date_node.style.bottom = -7.5 + "px";
 
 	
 
@@ -298,7 +299,7 @@ function addComment(doc) {
 	 x =  reply_text.innerHTML
 	 console.log(doc.data())
 	 comment_box.append(x);
-	 comment_box.style.backgroundColor = "#F0F0F0";
+     comment_box.style.backgroundColor = "#F0F0F0";
 	 comment_box.style.width = "60%";
 	 comment_box.style.marginLeft= "27%";
 	 comment_box.style.paddingTop = "20px";

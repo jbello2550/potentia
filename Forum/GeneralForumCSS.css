@@ -1,0 +1,6 @@
+﻿/*CSS for the General Forum page*/
+
+/*Affects all elements so they include margin and padding in the height and width*/
+* {
+    box-sizing: border-box;
+}

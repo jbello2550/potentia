@@ -1,12 +1,13 @@
-
-    
-<!--Forum html-->
+﻿<!--Forum SAT html-->
 
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <!--Adds mobile responsiveness-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--title-->
     <title>Forum</title>
     <!--Links the General CSS to the Homepage-->
     <link href="../GeneralCSS.css" rel="stylesheet" type="text/css" />
@@ -16,10 +17,34 @@
     <link href="https://fonts.googleapis.com/css?family=Alegreya+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|PT+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
+    <!--Adds ads from google ads-->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-4589527318049635",
+            enable_page_level_ads: true
+        });
+    </script>
 </head>
 <body>
     <!--Creates a header with all the different menu-topics-->
-    <div class="title"><a href="../index.html">POTENTIA</a></div>
+    <div class="title">
+        <a href="../index.html">
+            <img class="Top_Logo" src="../Favicon/Top_Logo.png" />POTENTIA
+        </a>
+        <!--The Translate button-->
+        <div class="translate">
+            <p>Translate:</p>
+            <div id="google_translate_element"></div>
+        </div>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </div>
+    <!--Creates a header with all the different menu-topics-->
     <div class="menu_container_overall">
         <div class="menu_container" id="menu_container_top">
             <div class="menu_item">
@@ -41,18 +66,18 @@
                 <h1><a href="../Resources/Resources.html">resources</a></h1>
             </div>
             <div class="menu_item">
-                <h1><a href="#">translate</a></h1>
+                <h1><a href="#">donate</a></h1>
             </div>
         </div>
         <!--Link on the side that leads back home-->
-        <h3 class="Home"><a href="../index.html">Home</a></h3>
-        <h3 class="Login_button"><a href="Login/Login.html" style="position: absolute; margin-top: 20px;">Login</a></h3>
+        <h3 class="Home"><a id="Home" href="../index.html">Home</a></h3>
+        <!--Link to the Login HTML Page-->
+        <div id='login_button'><h3 class="Login_button"><a style="color: black" href="Login/Login.html">Login</a></h3></div>
     </div>
     <!--Line at the top of the page-->
-    <div class="line" style="margin-top: -19px;"></div>
-
+    <div class="line"></div>
     <div id="title_forum" style="text-align: center; margin-bottom: -85px; font-family: Verdana, Geneva, sans-serif; font-size: 14px " onclick="options()">
-        <h1 style="margin-bottom: -10px; font-family:'Open Sans Condensed', sans-serif" class="drop_start"> SAT Form </h1><br>
+        <h1 style="margin-bottom: -10px; font-family:'Open Sans Condensed', sans-serif" class="drop_start"> SAT Forum </h1><br>
         <span style="font-family: Verdana, Geneva, sans-serif; font-size: 14px;"> click to see more topics </span>
         <img src="https://www.stickpng.com/assets/images/58f8bcf70ed2bdaf7c128307.png" style="height: 20px; margin-bottom: -5px;"><br>
         <div id="forum_options" class="topics" style="margin-top: 25px; display: none;color: #5E5E5E;">
@@ -63,39 +88,34 @@
             <span class="forum-General" style="padding-right: 30px; font-family: Verdana, Geneva, sans-serif; font-size: 14px; color: black;"><a href="Forum.html" id="option"> General </a></span>
         </div>
     </div>
-
     <div id="container" style="margin-top: 50px; border-radius: 10px; padding-top: 100px; padding-bottom: 100px;">
         <div id="user_profile" style="margin-left: -130px; margin-top: -34px; text-align: center; margin-bottom: 70px;">
             <form id="post">
-                <input type="text" style="border-top-right-radius: 5px; width: 450px; height: 120px; border: 1px solid #E4E3E2; border-bottom-right-radius: 5px; margin-left: 277.5px; text-indent: 10px; background-color: #F0F0F0; font-family: Verdana, Geneva, sans-serif; font-size: 14px;" id="post_here" placeholder="Caption" >
+                <input type="text" style="border-top-right-radius: 5px; width: 450px; height: 120px; border: 1px solid #E4E3E2; border-bottom-right-radius: 5px; margin-left: 277.5px; text-indent: 10px; background-color: #F0F0F0; font-family: Verdana, Geneva, sans-serif; font-size: 14px;" id="post_here" placeholder="Caption">
                 <div style="margin-top: -170px; margin-left: -324px;">
                     <input type="text" style="width: 150px; height: 120px; border: 1px solid #E4E3E2; text-indent: 10px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; margin-top: 50px; background-color: #F0F0F0; font-family: Verdana, Geneva, sans-serif; font-size: 14px; margin-bottom: -19.4px;" id="topic_text" placeholder="Main Topic">
-
                     <div>
                         <input type="text" style="width: 150px; height: 5%; border: 1px solid #E4E3E2; text-indent: 10px; border-top-left-radius: 0px; border-bottom-left-radius: 5px; background-color: #F0F0F0; font-family: Verdana, Geneva, sans-serif; font-size: 14px; padding-top: 20px; margin-top: -4.8%;" id="name_text" placeholder="Name">
-                        <input type="submit" style="margin-top: 10px; margin-left: 990px; border: 0px; color: #F0F0F0; background-color: steelblue; padding: 6px; border-radius: 3px; position: absolute; margin-top: -32px; margin-left: 483px; font-family: Verdana, Geneva, sans-serif;" value="Post">
+                        <input type="submit" style="margin-top: 10px; margin-left: 990px; border: 0px; color: #F0F0F0; background-color: darkred; padding: 6px; border-radius: 3px; position: absolute; margin-top: -32px; margin-left: 483px; font-family: Verdana, Geneva, sans-serif;" value="Post">
                     </div>
                 </div>
             </form>
-                <div id="cant_post" style="display:none; text-align: center; margin-left: 10%; padding-top: 2%;"> 
-                    <span style="font-family: Verdana, Geneva, sans-serif; font-size: 14px;"> { Please include a topic and a caption to make a post } </span> 
-                </div>
+            <div id="cant_post" style="display:none; text-align: center; margin-left: 10%; padding-top: 2%;">
+                <span style="font-family: Verdana, Geneva, sans-serif; font-size: 14px;"> { Please include a topic and a caption to make a post } </span>
+            </div>
         </div>
-
         <div id="wrapper" style="text-align: center; padding-top: 30px; margin-left: 45px; margin-top: -80px; margin-bottom: 30px;">
             <form id="search" style="display: inline-block;">
                 <input type="text" style="border-radius: 25px; width: 450px; border-style: solid; border-color: #F0F0F0; height: 21px;" id="search_bar">
-                <input type="submit" style="border: 0px; color: #F0F0F0; background-color: steelblue; padding: 6px; border-radius: 3px; font-family: Verdana, Geneva, sans-serif;" value="Search">
+                <input type="submit" style="border: 0px; color: #F0F0F0; background-color: darkred; padding: 6px; border-radius: 3px; font-family: Verdana, Geneva, sans-serif;" value="Search">
                 <img src="https://icon-library.net/images/white-search-icon-transparent-background/white-search-icon-transparent-background-13.jpg" style="height: 12px; position: absolute; margin-top: -19px; margin-left: 180px;">
             </form>
         </div>
-
         <div id="comment_div" style="display: none;">
             <form id="response_div_form">
                 <input type="text" id="respond_here" style="height: 3vh; width: 60vw; padding-left: 1%" placeholder="Type your comment" c_id=" ">
             </form>
         </div>
-
     </div>
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
