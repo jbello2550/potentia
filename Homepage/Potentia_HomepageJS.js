@@ -19,7 +19,7 @@ var CollegeTips = [
     "Try not to drink too much caffeine. It is really not good for you, and you can get energy by staying well-hydrated, eating healthy foods, and sleeping enough.",
     "If you are having issues with your roommate, talk about them. Do not let them build up to the point where you can not stand each other.",
     "Get a part-time job, preferably doing something that relates to your major. If you can, work in the early morning – you would just be sleeping otherwise. I have found that having a job actually helped with my time management when I first started school.",
-    "If you can not find a part-time job that relates to your major, look for a “warm-body” job – one that allows you to do homework while working. Some examples would be working at the desk of the library or the athletic center.",
+    "If you can not find a part-time job that relates to your major, look for a 'warm-body' job  one that allows you to do homework while working. Some examples would be working at the desk of the library or the athletic center.",
     "If your school offers a position that helps with summer orientation for incoming students, apply for it. This kind of job will build your confidence and communication skills like none other.",
     "Get to know your professors. College is just as much about networking as it is about sitting in class. Plus, most of them are bored out of their skulls during office hours.",
     "If you have younger siblings that come to visit, supervise their use of your microwave. Trust me on this one.",
