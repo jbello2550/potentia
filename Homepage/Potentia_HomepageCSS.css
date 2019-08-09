@@ -58,3 +58,8 @@
     margin: 0px 20px;
     display: inline-block;
 }
+/*Affects the container whihc has the daily tips and tricsk for college*/
+#Daily_Tips_for_College {
+    background-color: lightgray;
+    padding: 10px 30px
+}

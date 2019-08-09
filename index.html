@@ -25,6 +25,10 @@
             enable_page_level_ads: true
         });
     </script>
+    <!--Connects jquery to the html-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--Adds more characters that can be displayed on a page-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body>
 
@@ -99,10 +103,12 @@
                 </p>
             </div>
             <!--Daily Tips and Tricks-->
-            <div class=" Information">
+            <div class=" Information" id="Daily_Tips_for_College">
                 <h4 class="Information_title">Daily Tips For College</h4>
                 <div id="Tips_container">
-
+                    <div id="Tip1_container"></div>
+                    <div id="Tip2_container"></div>
+                    <div id="Tip3_container"></div>
                 </div>
             </div>
             <div class="Information">
@@ -130,6 +136,7 @@
         </div>
 
     </div>
-
+    <!--Connects the specific JavaScript for the Homepage-->
+    <script src="Homepage/Potentia_HomepageJS.js"></script>
 </body>
 </html>
