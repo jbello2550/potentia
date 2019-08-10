@@ -11,7 +11,35 @@
     font-size: 14px;
     line-height: 30px;
 }
-/*Affects tehc otnainer which holds the information*/
+/*Affects all links within thead main body*/
+.main_body a {
+    color: blue;
+}
+/**************************************************************************************************************************************************************/
+/*Affects the container which has the page title and the search bar*/
+.main_body_CollegeApplications_title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative
+}
+/*Affects the link on the side that leads to Search Universities and their Application Process*/
+.Universities_Application_Process {
+    line-height: 20px;
+    margin: 0px;
+    text-align: center;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+/*Affects the link when the page shinks*/
+@media only screen and (max-width: 800px){
+    .Universities_Application_Process {
+        position: relative;
+    }
+}
+/**************************************************************************************************************************************************************/
+/*Affects the container which holds the information*/
 #General_College_Application_Info {
     display: flex;
     flex-wrap: wrap;
@@ -41,3 +69,4 @@
         margin: 0px 15px;
     }
 }
+/**************************************************************************************************************************************************************/
